@@ -15,8 +15,8 @@ import useLanguage from '@/Hooks/useLanguage';
 const Preloader3 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState([
-        {img : `https://clickhowto.com/wp-content/uploads/2017/05/Natural-products.jpg`},
-       
+        {img : `https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1740&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`},
+        {img:`https://images.unsplash.com/photo-1653813893853-be3e6ecfe061?auto=format&fit=crop&q=80&w=1740&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
      ])
      const redir = () => {
         router.push('/collection/products')
@@ -86,18 +86,19 @@ const Preloader3 = ({res}:{res:any}) => {
                             sx={{
                                 top:'50%',
                                 px:{xs:4,sm:5,md:6},
-                                maxWidth:'550px',
+                                maxWidth:'650px',
                                 transform:'translateY(-50%)',
                                 zIndex:123456,
                                 position:'absolute'}}>
                                 <Typography 
                                 
                                 sx={{color:'white',fontSize:{xs:'2.65em',sm:'3.1em',md:'3.65em',lg:'4em'},fontWeight:900}}>
-                                {text('Experience the Power of Nature', 'استشعر قوة الطبيعة')}
+                             
+                                Al Halabi For Business Cars And More 
                                 </Typography>
                                 <Typography 
                                 sx={{color:'white',fontSize:{xs:'.85em',sm:'.87em'},mt:1,maxWidth:'600px'}}>
-                                {text('Welcome to Truenatureblend, your one-stop-shop for all your health and wellness needs. Discover our premium selection of natural supplements including ashwagandha, tongkat ali, cordyceps mushroom, lion\'s mane mushroom, and more.', 'مرحبًا بك في ترو ناشور بليند، متجرك الشامل لجميع احتياجات صحتك وعافيتك. اكتشف تشكيلتنا الرائعة من المكملات الطبيعية الفاخرة، بما في ذلك الأشواغاندا، وتونجكات علي، وفطر كورديسيبس، وفطر رأس الأسد، والمزيد.')}
+                                    Hundreds of the best cars to rent today at Al Halabi! 
 
                                 </Typography>
                                 <Box className="flex">
@@ -106,16 +107,10 @@ const Preloader3 = ({res}:{res:any}) => {
                                 onClick={()=>redir()}
                                 
                                 className='bg white borderColor' sx={{mt:3}}>
-                                {text('Shop Now', 'تسوق الآن')}
+                               VIEW ALL CARS
 
                                 </Btn>
-                                <Btn 
-                                onClick={()=>{router.push('/about')}}
-                                
-                                v2 className='color2 borderColor2' sx={{ml:2,mt:3}}>
-                                {text('Discover', 'اكتشف')}
- 
-                                </Btn>
+                            
                                 </Box>
                             </Box>
                             </Container>

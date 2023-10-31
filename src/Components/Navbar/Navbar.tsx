@@ -16,8 +16,7 @@ import {Badge, Divider, Typography} from '@mui/material';
 import {useRouter} from 'next/navigation';
 // import {AiOutlinePhone, AiOutlineSearch, AiOutlineMenu} from 'react-icons/ai'
 import {CiSearch,CiShoppingCart} from 'react-icons/ci'
-import {AiOutlineHome,AiOutlineShoppingCart} from 'react-icons/ai'
-import SearchInput from './SearchInput';
+import {AiOutlineCar} from 'react-icons/ai'
 
 import NavButtom from './NavButtom';
 import { useCartContext, useDrawerContext, useLangContext } from '@/context/Contexts';
@@ -58,13 +57,13 @@ export default function Navbar() {
     return ( <>
      <Box
      id='navy'
-    className='center auto relative   bg flex'
+    className='center auto relative    flex'
         sx={{
             zIndex:12,
         flexWrap: 'wrap',
                 width:'100%',
                 boxShadow:'none',
-        background:'white',
+        background:'black',
         border: 'none',
         px:0,
         flexGrow: 1
@@ -79,7 +78,7 @@ export default function Navbar() {
 
                 boxShadow:'none',
 
-                background:'white',
+                background:'black',
             // maxWidth: 'lg',
                 width:'100%',
             margin: '0 auto',
@@ -92,7 +91,7 @@ export default function Navbar() {
 
                 sx={{
                 
-                background:'white',
+                    background:'black',
                     maxWidth:'xl',
                 px:'0 !important',
                 
@@ -109,7 +108,7 @@ export default function Navbar() {
 }}>
     <img
         className='img'
-        src={`https://ucarecdn.com/42db8a52-041f-4b79-8bfb-5c10a3a3c4fd/truenatureblendgreen011.jpg`}
+        src={`https://ucarecdn.com/36652ae5-ba61-45de-b9e2-dc30dd210f57/whitelogo.png`}
         alt="truenatureblend logo"/>
 </Box>
 </Link>
@@ -137,25 +136,25 @@ export default function Navbar() {
                              
                         
                              
-                             <Btn
+                             {/* <Btn
                             onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
                             sx={{
                                 margin : '8px',padding:0,
-                            color: 'black',
+                            color: 'white',
 
                             // margin: '0.1em',
                         }}>
                             {text('العربية','English')}
-                        </Btn>
+                        </Btn> */}
                         <IconButton
                             onClick={() => router.push('/collection/products')}
                             sx={{
                                 margin : '8px',padding:0,
-                            color: 'black'
+                            color: 'white'
                         }}>
                             {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
 
-                                <CiShoppingCart color='black'/>
+                                <CiShoppingCart color='white'/>
                             {/* </Badge> */}
                             {/* <Typography>
                                 Cart
@@ -168,13 +167,13 @@ export default function Navbar() {
                             aria-label="menu"
                             sx={{
                             margin : '8px',padding:0,
-                            color: 'black',
+                            color: 'white',
                             // margin: '0.1em',
                             display: {
                                 md: 'none'
                             }
                         }}>
-                            <IoIosMenu color='black'/>
+                            <IoIosMenu color='white'/>
                         </IconButton>
                    
    {/* <a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} target='_blank' className='flex decor-none' rel='noopener'>
@@ -182,10 +181,10 @@ export default function Navbar() {
                         <IconButton
                             onClick={() => setCartOpen(!cartOpen)}
                             sx={{
-                            color: 'black'
+                            color: 'white'
                         }}>
                      
-                            <AiOutlinePhone color='black'/>
+                            <AiOutlinePhone color='white'/>
 
                         </IconButton>
     </a> */}
@@ -223,33 +222,33 @@ mobile
                     }}
                         className='flex right'>
  
-
+{/* 
                                <Btn
                             onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
                             sx={{
                                 margin : '8px',padding:0,
-                            color: 'black',
+                            color: 'white',
 
                             // margin: '0.1em',
                         }}>
                             {text('English','Arabic')}
-                        </Btn>
+                        </Btn> */}
                         <IconButton
                             onClick={() => setOpenModal(!openModal)}
                             sx={{
-                            color: 'black'
+                            color: 'white'
                         }}>
 
-                                <CiSearch color='black'/>
+                                <AiOutlineCar color='white'/>
                           
                         </IconButton>
                         <IconButton
                         onClick={() => router.push('/collection/products')}
                             sx={{
-                            color: 'black'
+                            color: 'white'
                         }}>
                             {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
-                                <CiShoppingCart color='black'/>
+                                <CiShoppingCart color='white'/>
                             {/* </Badge> */}
                           
                             </IconButton>
@@ -261,11 +260,11 @@ mobile
                             edge="start"
                             aria-label="menu"
                             sx={{
-                            color: 'black',
+                            color: 'white',
                             // margin: '0.1em',
                          
                         }}>
-                            <IoIosMenu color='black'/>
+                            <IoIosMenu color='white'/>
                         </IconButton> */}
                     
                     </Box>

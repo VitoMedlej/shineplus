@@ -6,17 +6,17 @@ const Perks = () => {
     const items =  [
     
       {
-        title: "Secure Payment",
+        title: "WIFI",
         icon: "https://www.svgrepo.com/show/284882/secure-shield-shield.svg",
         text: "suitable for every budget while assuring best quality for your pet health"
       },
       {
-        title: "Express Shipping",
+        title: "Air Condition",
         icon: "https://www.svgrepo.com/show/490684/deliver-food.svg",
         text: "The perfect place to spoil your loved one"
       },
       {
-        title: " Free Return",
+        title: "foor Seats",
         icon: "https://www.svgrepo.com/show/494549/return-box-cycle.svg",
         text: "Contact us for any service inquiries"
       }
@@ -42,6 +42,7 @@ const Perks = () => {
             })
         }
         </Box>
+        <Divider/>
 
     </Box>
   )

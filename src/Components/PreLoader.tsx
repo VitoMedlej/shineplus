@@ -43,10 +43,10 @@ PreLoader = ({data,resImages}:any) => {
   return (
     <Box >
       <MainCarousel resImages={resImages}/>
-      {/* <Perks/> */}
+      <HomeProductCollection  products={data?.featuredProducts}/>
 
     <Grid  sx={{background:'#f4f8fd',width:'100%',py:8}} container>
-    <Grid  maxWidth='lg' item xs={12} md={6}>
+    {/* <Grid  maxWidth='lg' item xs={12} md={6}>
       <Box sx={{height:'500px',maxWidth:'450px'}} className='auto'>
         <img src="https://ucarecdn.com/c9a20ac1-a815-4a27-ac99-9f896cc6f0bd/doctors.jpg" alt="" className="img" />
       </Box>
@@ -74,7 +74,7 @@ PreLoader = ({data,resImages}:any) => {
         </Btn>
     </Container>
 
-    </Grid>
+    </Grid> */}
     <Grid  maxWidth='lg' item xs={12} sx={{mt:{xs:8,sm:12}}}>
       <Typography sx={{fontSize:{xs:'2em',sm:'3em'},fontWeight:600}} className='center text-center auto color'>
       {text('Why Choose Truenatureblend?', 'لماذا تختار ترو ناشور بليند؟')}
@@ -213,9 +213,8 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
 
       <Box/>
     
-      <HomeProductCollection  products={data?.featuredProducts}/>
 
-        <Container sx={{pt:12,justifyContent:'space-between'}} className='flex row wrap space-between items-between' maxWidth='lg'>
+        {/* <Container sx={{pt:12,justifyContent:'space-between'}} className='flex row wrap space-between items-between' maxWidth='lg'>
       <Box className='relative flex center items-center ' sx={{mb:2, width:{xs:'100%',sm:'49%'},height:{xs:'350px',sm:'350px',md:'450px',lg:'45vw'}}}>
                   <img src="https://ucarecdn.com/4fc6fdc2-a720-40dd-8469-80966a92a759/purplemushroom.webp" alt="" className="img" />
                   <Box  className="absolute flex center auto items-center text-center col ">
@@ -248,12 +247,13 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
                   </Box>
             </Box>
           
-      </Container>
+      </Container> */}
 
       {/* <HomeProductCollection  products={data}/> */}
 
+      <Perks></Perks>
 
-      <Container  className='flex center wrap items-center row' sx={{py:5,my:8,mx:'auto',maxWidth:'lg',background:'#f4f8fd',}}>
+      {/* <Container  className='flex center wrap items-center row' sx={{py:5,my:8,mx:'auto',maxWidth:'lg',background:'#f4f8fd',}}>
         <Box>
         <Typography sx={{width:'100%',maxWidth:'600px',flex:1,fontSize:{xs:'.95em',sm:'1.19em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
             
@@ -265,12 +265,11 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
         <Box sx={{ width:{xs:'200px',sm:'200px'},height:{xs:'200px',sm:'200px'},my:1}} className='auto rounded'>
           <img src="https://funmauj.b-cdn.net/test/928368.jpg" alt="" className="img rounded" />
         </Box>
-        </Container>       
+        </Container>        */}
     {/* <FullscreenPoster/> */}
     {/* <HomeProductsCarousel Collectiontitle={"Browse Our Collections"} delay={3000} data={data?.featuredProducts?.slice(10,18)}/> */}
     {/* <HomeProductsCarousel Collectiontitle={"Browse Our Collections"} delay={3000} data={data?.featuredProducts?.slice(18)}/> */}
 
-    <Testimonials/>
 
     <Box sx={{my:8,height:'500px',overflow:'hidden'}} className='relative flex center items-center'>
       <Box className="absolute" sx={{width:'100%',height:'100%',top:0,right:0,background:'black',opacity:.5}}></Box>
@@ -294,9 +293,9 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
       </Box>
 
       </Box>        
+      <Testimonials/>
 
         
-        <Perks></Perks>
         {/* <ContactSection/> */}
   </Box>
   )
