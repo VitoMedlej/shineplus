@@ -14,14 +14,11 @@ import {GrFormClose} from 'react-icons/gr'
 
 
 const cates = [
-  `Lions Mane`,
-`MACA`,
-`Bacopa Monnieri `,
-`Passion Flower `,
-`GABA`,
-`Taurine`,
-`L arginine`,
-`L Lysine`,
+  'Small Cars',
+  'Business Cars',
+  'Luxury Business Cars',
+  'SUVs',
+  '2 Door Cars'
 ]
 
 
