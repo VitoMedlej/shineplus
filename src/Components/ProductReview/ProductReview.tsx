@@ -1,7 +1,6 @@
 "use client"
 import {Divider, Grid, Box, Typography, Rating, TextField} from '@mui/material'
 import React from 'react'
-import Btn from '../Btn/Btn';
 import UserReview from './UserReview';
 import ReviewForm from './ReviewForm';
 

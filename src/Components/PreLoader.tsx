@@ -62,7 +62,7 @@ PreLoader = ({data,resImages}:any) => {
 
         </Typography>
         <Typography sx={{width:'100%',maxWidth:'500px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
-        {text('At Truenatureblend, we’re passionate about health and wellness. We believe in the power of nature, and that’s why we’ve created a range of natural supplements to help you live your best life. From ashwagandha to tongkat ali, we’ve got everything you need to feel your best.', 'في ترو ناشور بليند، نحن ملتزمون بالصحة والعافية. نحن نؤمن بقوة الطبيعة، وهذا هو السبب في أننا قمنا بإنشاء مجموعة من المكملات الطبيعية لمساعدتك على عيش حياتك بأفضل طريقة. من الأشواغاندا إلى تونجكات علي، لدينا كل ما تحتاجه لتشعر بأفضل حال.')}
+        {text('At Al halabi , we’re passionate about health and wellness. We believe in the power of nature, and that’s why we’ve created a range of natural supplements to help you live your best life. From ashwagandha to tongkat ali, we’ve got everything you need to feel your best.', 'في ترو ناشور بليند، نحن ملتزمون بالصحة والعافية. نحن نؤمن بقوة الطبيعة، وهذا هو السبب في أننا قمنا بإنشاء مجموعة من المكملات الطبيعية لمساعدتك على عيش حياتك بأفضل طريقة. من الأشواغاندا إلى تونجكات علي، لدينا كل ما تحتاجه لتشعر بأفضل حال.')}
 
         </Typography>
         <Btn 
@@ -77,11 +77,11 @@ PreLoader = ({data,resImages}:any) => {
     </Grid> */}
     <Grid  maxWidth='lg' item xs={12} sx={{mt:{xs:8,sm:12}}}>
       <Typography sx={{fontSize:{xs:'2em',sm:'3em'},fontWeight:600}} className='center text-center auto color'>
-      {text('Why Choose Truenatureblend?', 'لماذا تختار ترو ناشور بليند؟')}
+      {text('Why Choose Us for Your Car Rental Needs', 'لماذا تختار ترو ناشور بليند؟')}
 
       </Typography>
       <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
-      {text('Our supplements are made with only the finest natural ingredients, carefully selected for their purity and potency. Our products are free from harmful chemicals', 'مكملاتنا مصنوعة فقط من أرقى المكونات الطبيعية، تم اختيارها بعناية بسبب نقاوتها وفعاليتها. منتجاتنا خالية من المواد الكيميائية الضارة.')}
+      {text('Our extensive fleet includes business cars, SUVs, and family cars, ensuring you find the right vehicle for your specific needs.', 'مكملاتنا مصنوعة فقط من أرقى المكونات الطبيعية، تم اختيارها بعناية بسبب نقاوتها وفعاليتها. منتجاتنا خالية من المواد الكيميائية الضارة.')}
 
         </Typography>
     </Grid>
@@ -257,7 +257,7 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
         <Box>
         <Typography sx={{width:'100%',maxWidth:'600px',flex:1,fontSize:{xs:'.95em',sm:'1.19em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
             
-        {text('At Truenatureblend, we’re committed to sustainability. That’s why we use eco-friendly packaging and support sustainable farming practices to ensure that our products have a minimal impact on the environment.', 'في ترو ناشور بليند، نحن ملتزمون بالاستدامة. لهذا السبب نستخدم تعبئة صديقة للبيئة وندعم ممارسات الزراعة المستدامة لضمان أن منتجاتنا لها تأثير أدنى على البيئة.')}
+        {text('At Al halabi , we’re committed to sustainability. That’s why we use eco-friendly packaging and support sustainable farming practices to ensure that our products have a minimal impact on the environment.', 'في ترو ناشور بليند، نحن ملتزمون بالاستدامة. لهذا السبب نستخدم تعبئة صديقة للبيئة وندعم ممارسات الزراعة المستدامة لضمان أن منتجاتنا لها تأثير أدنى على البيئة.')}
 
             </Typography>
         </Box>
@@ -278,7 +278,7 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
         {text('Our Mission', 'رسالتنا')}
         </Typography>
         <Typography sx={{fontSize:{xs:'.74em',sm:'.9em'},color:'white',maxWidth:'800px'}} className='auto'>
-        {text('Our mission at Truenatureblend is to provide our customers with the highest quality natural supplements to support their health and wellness goals. We’re committed to sustainability and supporting the environment, and we believe in the power of nature to help us live our best lives.', 'مهمتنا في ترو ناشور بليند هي تقديم أعلى جودة من المكملات الطبيعية لدعم أهداف الصحة والعافية لعملائنا. نحن ملتزمون بالاستدامة ودعم البيئة، ونؤمن بقوة الطبيعة في مساعدتنا على عيش أفضل حياة.')}
+        {text('Our mission at Al halabi  is to provide our customers with the highest quality natural supplements to support their health and wellness goals. We’re committed to sustainability and supporting the environment, and we believe in the power of nature to help us live our best lives.', 'مهمتنا في ترو ناشور بليند هي تقديم أعلى جودة من المكملات الطبيعية لدعم أهداف الصحة والعافية لعملائنا. نحن ملتزمون بالاستدامة ودعم البيئة، ونؤمن بقوة الطبيعة في مساعدتنا على عيش أفضل حياة.')}
 
         </Typography>
         <Btn
@@ -288,7 +288,7 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
       </Btn>
       </Box>
       <Box sx={{height:'100%',width:'100%'}}>
-      <img src="https://th.bing.com/th/id/R.232188324515c59892fe6bdb1524bc11?rik=rqi5%2b%2fybk0ASHA&pid=ImgRaw&r=0" alt="" className="img" />
+      <img src="https://images.pexels.com/photos/18546455/pexels-photo-18546455/free-photo-of-black-volkswagen-alltrack.jpeg?auto=compress&cs=tinysrgb&w=1600&h=750&dpr=1" alt="" className="img" />
  
       </Box>
 

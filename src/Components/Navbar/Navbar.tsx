@@ -5,59 +5,46 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import {IoIosMenu} from 'react-icons/io'
-// import {CiShoppingCart} from 'react-icons/ci'
+// import {AiOutlinePhone} from 'react-icons/ci'
 
 import { useEffect, useState} from 'react';
 // import { CartContext, DrawerContext } from '../../../pages/_app'; import
 import SearchModal from './SearchModal';
 import Link from 'next/link';
-import {Badge, Divider, Typography} from '@mui/material';
+import { Divider, Typography} from '@mui/material';
 // import { loadState } from '../../Utils/LocalstorageFn';
 import {useRouter} from 'next/navigation';
 // import {AiOutlinePhone, AiOutlineSearch, AiOutlineMenu} from 'react-icons/ai'
-import {CiSearch,CiShoppingCart} from 'react-icons/ci'
+import {AiOutlinePhone} from 'react-icons/ai'
 import {AiOutlineCar} from 'react-icons/ai'
 
 import NavButtom from './NavButtom';
-import { useCartContext, useDrawerContext, useLangContext } from '@/context/Contexts';
-import Btn from '../Btn/Btn';
-import useLanguage from '@/Hooks/useLanguage';
+import {  useDrawerContext } from '@/context/Contexts';
 
 
 
 export const categories = [
-    "New Arrivals",
-    "Cats",
-    "Dogs",
-    "Birds",
-    "Offers",
+    'Small Cars',
+    'Business Cars',
+    'Luxury Business Cars',
+    'SUVs',
+    '2 Door Cars'
 ]
 export default function Navbar() {
     const {open, setOpen} = useDrawerContext();
     const [openModal,
         setOpenModal] = useState(false);
     
-    const [localCart,
-        setLocalCart] = useState([]);
 
-    const {cartOpen, setCartOpen} = useCartContext();
     const router = useRouter()
     // const localCart = [1]
-    useEffect(() => {
-        const cart : any = []
-        // const cart = loadState('sgh2j40-tlsit') || []
-        if (cart) {
+   
+   
 
-            setLocalCart(cart)
-        }
-    }, [cartOpen])
-    const {text} = useLanguage()
-
-    const {lang,setLang} = useLangContext()
     return ( <>
      <Box
      id='navy'
-    className='center auto relative    flex'
+    className='center auto     flex'
         sx={{
             zIndex:12,
         flexWrap: 'wrap',
@@ -75,7 +62,7 @@ export default function Navbar() {
     className='center relative  flex'
 
             sx={{
-
+                transform:'translateY(1px)',
                 boxShadow:'none',
 
                 background:'black',
@@ -104,12 +91,13 @@ export default function Navbar() {
     mx: {
         sm: '1em'
     },
-    width:{xs:'90px',sm: '90px'}
+    height : {xs:'100px'},
+    width:{xs:'150px',sm: '120px'}
 }}>
     <img
-        className='img'
-        src={`https://ucarecdn.com/36652ae5-ba61-45de-b9e2-dc30dd210f57/whitelogo.png`}
-        alt="truenatureblend logo"/>
+        className='img contain'
+        src={`https://ucarecdn.com/1520c0d1-bd9e-4be7-9f74-255a3e5bc352/Blacklogo.png`}
+        alt="Al halabi  logo"/>
 </Box>
 </Link>
                 <Box
@@ -154,7 +142,7 @@ export default function Navbar() {
                         }}>
                             {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
 
-                                <CiShoppingCart color='white'/>
+                                <AiOutlinePhone color='white'/>
                             {/* </Badge> */}
                             {/* <Typography>
                                 Cart
@@ -248,7 +236,7 @@ mobile
                             color: 'white'
                         }}>
                             {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
-                                <CiShoppingCart color='white'/>
+                                <AiOutlinePhone color='white'/>
                             {/* </Badge> */}
                           
                             </IconButton>

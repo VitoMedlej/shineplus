@@ -5,6 +5,28 @@ import ProductCard from '../ProductCard/ProductCard'
 import { IProduct } from '@/Types/Types'
 import Btn from '../Btn/Btn'
 import { useRouter } from 'next/navigation'
+import CateCard from '../CateCard/CateCard'
+
+
+
+const collectionCars = [
+    {title:'Family Cars',
+    _id: 'foasfoasfjoi1j2412',
+    category:'abc',
+    img:`https://images.pexels.com/photos/5998732/pexels-photo-5998732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
+},
+    {
+        title:'Luxury SUV',
+        _id: 'foasfoasfjfasfoi1j2412',
+        category:'abc2',
+        img : `https://images.pexels.com/photos/14445439/pexels-photo-14445439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
+    },
+    {
+    title:'Luxury Business Cars',
+    _id: 'foasfoasfjoi1124214j2412',
+    category:'abc3',
+    img : `https://images.pexels.com/photos/3786091/pexels-photo-3786091.jpeg?auto=compress&cs=tinysrgb&w=750`
+}]
 
 const HomeProductCollection = ({products} : {products:IProduct[] | never[]}) => {
  const router = useRouter()
@@ -24,7 +46,7 @@ const HomeProductCollection = ({products} : {products:IProduct[] | never[]}) => 
     padding:.5,
     fontWeight: '300'
 }}>
- Our Best Sellers
+ Browse Car By Collection
 </Typography>
 
 <Btn
@@ -35,10 +57,10 @@ onClick={()=>router.push('/collection/products')}
 </Box>
 
               <Box sx={{mb:2,mt:4}} className='flex wrap gap1 justify-center'>
-                  {products && products?.length > 0 && products.map(i=>{
+                  {collectionCars.map(i=>{
 
-                      return <ProductCard key={i?._id} inStock={i?.inStock} title={i?.title} price={i?.price} _id={i?._id} 
-                       images={i?.images?.length > 0 && i?.images[0]?.length > 3 ? i?.images : ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS90cK_Js0H-conZ_T6tHjPHtCXP8e-e7MHt69YkHWej5n90FlRvLFUMC2CmRt6UPy9dYc&usqp=CAU']}
+                      return <CateCard key={i?._id}  title={i?.title} _id={i?._id} 
+                       images={i?.img}
                        category={i?.category}/>
                   })}
               </Box>

@@ -25,19 +25,19 @@ import useLanguage from '@/Hooks/useLanguage';
 // ]
 const tests = [
   {
-    title: "Discover the Power of Truenatureblend!",
+    title: "Discover the Power of Al halabi !",
     reviewer: "(Ella, Health Enthusiast)",
-    description: "Truenatureblend is a true haven for health and wellness enthusiasts like myself. Their premium selection of natural supplements is a game-changer. From the revitalizing effects of ashwagandha to the vitality boost of tongkat ali, they have it all. I've experienced a remarkable improvement in my overall well-being since I started incorporating their products into my daily routine. Truenatureblend is my go-to destination for all my health and wellness needs!",
+    description: "Al halabi  is a true haven for health and wellness enthusiasts like myself. Their premium selection of natural supplements is a game-changer. From the revitalizing effects of ashwagandha to the vitality boost of tongkat ali, they have it all. I've experienced a remarkable improvement in my overall well-being since I started incorporating their products into my daily routine. Al halabi  is my go-to destination for all my health and wellness needs!",
   },
   {
-    title: "A Wellness Oasis with Truenatureblend!",
+    title: "A Wellness Oasis with Al halabi !",
     reviewer: "(Oliver, Fitness Fanatic)",
-    description: "When it comes to my fitness journey, Truenatureblend has been a true ally. Their range of natural supplements, including cordyceps and lion's mane mushroom, has been a game-changer in my routine. The quality of their products is unparalleled, and I've seen significant improvements in my energy levels and mental clarity. Truenatureblend is my one-stop-shop for all things related to health and wellness. I can't recommend them enough!",
+    description: "When it comes to my fitness journey, Al halabi  has been a true ally. Their range of natural supplements, including cordyceps and lion's mane mushroom, has been a game-changer in my routine. The quality of their products is unparalleled, and I've seen significant improvements in my energy levels and mental clarity. Al halabi  is my one-stop-shop for all things related to health and wellness. I can't recommend them enough!",
   },
   {
-    title: "Truenatureblend: Your Path to Optimal Health!",
+    title: "Al halabi : Your Path to Optimal Health!",
     reviewer: "(Ava, Wellness Advocate)",
-    description: "As a wellness advocate, I'm always on the lookout for high-quality supplements, and Truenatureblend has exceeded my expectations. Their comprehensive range of natural products, including ashwagandha, tongkat ali, cordyceps mushroom, and more, is a testament to their commitment to well-being. Whether you're a health enthusiast or someone looking to enhance their overall health, Truenatureblend is the answer. Trust me; you won't be disappointed!",
+    description: "As a wellness advocate, I'm always on the lookout for high-quality supplements, and Al halabi  has exceeded my expectations. Their comprehensive range of natural products, including ashwagandha, tongkat ali, cordyceps mushroom, and more, is a testament to their commitment to well-being. Whether you're a health enthusiast or someone looking to enhance their overall health, Al halabi  is the answer. Trust me; you won't be disappointed!",
   },
 ];
 

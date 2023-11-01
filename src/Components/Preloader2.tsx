@@ -4,9 +4,9 @@ import {Box, Container,  Pagination, Typography} from "@mui/material"
 import { useParams, useRouter, useSearchParams } from "next/navigation"
 import { useState, useEffect } from "react"
 import { server } from "@/Utils/Server"
-import FilterSection from './CollectionPage/FilterSection/FilterSection'
+// import FilterSection from './CollectionPage/FilterSection/FilterSection'
 import { IProduct } from '@/Types/Types'
-import BreadCrumb from './BreadCrumb/BreadCrumb'
+// import BreadCrumb from './BreadCrumb/BreadCrumb'
 import ProductCard from './ProductCard/ProductCard'
 import SearchInput from './Navbar/SearchInput'
 
@@ -15,13 +15,13 @@ const Preloader2 = ({data,totalPages}:any) => {
     // const [pageNB,setPageNB] = useState(0)
     const router = useRouter()
     const [products,setProducts] = useState<any>()
-    useEffect(() => {
+    // useEffect(() => {
       
         // if (!products) {
-            setProducts(data)
+            // setProducts(data)
         // }
       
-    }, [data])
+    // }, [data])
     
     const {category} = useParams() 
     const searchParams = useSearchParams();
@@ -67,7 +67,7 @@ const Preloader2 = ({data,totalPages}:any) => {
         minHeight: '100px'
     }}>
     </Box> */}
-    <SearchInput/>
+    {/* <SearchInput/> */}
     {/* <BreadCrumb></BreadCrumb> */}
    
 
@@ -85,8 +85,8 @@ const Preloader2 = ({data,totalPages}:any) => {
                 images={i.images}
                 category={i.category}/>
         })
-: <Typography>
-No products found, try a different category...
+: <Typography sx={{fontSize:'1.1em',py:4,textAlign:'center'}}>
+We could not find any cars, try another category.
 </Typography>}
     </Box>
     <Pagination
