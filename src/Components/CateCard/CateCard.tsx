@@ -1,30 +1,39 @@
 "use client"
 // import {IProduct} from '@/Types/Types'
 import {Box, Typography} from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import Btn from '../Btn/Btn'
 // import {GrAdd} from 'react-icons/gr'
 import {useRouter} from 'next/navigation'
 import useCart from '@/Hooks/useCart'
+import { FaTumblrSquare } from 'react-icons/fa'
 
 
 
 const CateCard = ({
     title,
     images,
+    flip,
     category,
+    list,
     _id,
 } : {
     _id: string,
     title: string,
+    list : string[],
     images: string,
+    flip?:boolean,
     category: string,
 }) => {
     const router = useRouter()
     const {addToCart}= useCart()
+    const [hovered,setHover] = useState(false)
 
+ 
     return (
         <Box
+            onMouseEnter={()=>setHover(true)}
+            onMouseLeave={()=>setHover(false)}
             className='  trans cardproduct center text-center'
             sx={{
             // boxShadow: `rgba(0, 0, 0, 0.05) 0px 0px 0px 1px`,
@@ -32,6 +41,7 @@ const CateCard = ({
             py: 1,
             margin: '0em auto',
             my:1,
+            maxWidth:{md:'400px'},
             minWidth: {xs:'95%',sm:'30%'},
             width:  {
                     xs: '99%',
@@ -41,18 +51,37 @@ const CateCard = ({
             
         }}>
             <Box 
-            className='cursor auto'
+            className='cursor auto relative'
                onClick={() => router.push(`/rental/${category}`)}
             sx={{
+                
                 width:{xs:'98%',sm:'100%',md:'100%'},
                 height: {xs:'400px',sm:'450px',md:'500px'}
             }}>
                 <img
+                style={{  transform: flip? 'scaleX(-1)' : ''}}
                     src={images
                     
                     }
                     alt="Prdouct image"
                     className="img cover "/>
+                    <Box className="absolute center auto flex trans2  items-center" sx={{pointerEvent:'none',opacity:hovered ? '.8' : '0',width:'100%',zIndex:132,height:'100%',background:'black',top:0,right:0}}>
+                   <Box>
+
+                    <Typography className='' sx={{fontSize:'1.5em',fontWeight:600,pb:1,height:'100%',color:'white',zIndex:24142}}>
+                            {title}
+                        </Typography>
+
+                        {
+                            list.map(i=>{
+                                return    <Typography  sx={{color:'white'}}>
+                                {i}</Typography>
+                            })
+                        }
+      
+</Box>
+
+                    </Box>
             </Box>
             
             <Box 

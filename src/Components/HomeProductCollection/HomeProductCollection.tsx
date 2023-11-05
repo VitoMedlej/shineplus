@@ -10,23 +10,15 @@ import CateCard from '../CateCard/CateCard'
 
 
 const collectionCars = [
-    {title:'Family Cars',
+    {title:'Small Touristic Cars',
     _id: 'foasfoasfjoi1j2412',
+    list: [`kia Picanto`,`Hyundai Grand  I10`,'Nissan Micra',],
     category:'abc',
-    img:`https://images.pexels.com/photos/5998732/pexels-photo-5998732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
+    price : '16$ per day',
+    flip: true,
+    img:`https://autophorie.de/wp-content/uploads/2017/02/kia-picanto-dritte-generation-gt-line.jpg`
 },
-    {
-        title:'Luxury SUV',
-        _id: 'foasfoasfjfasfoi1j2412',
-        category:'abc2',
-        img : `https://images.pexels.com/photos/14445439/pexels-photo-14445439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
-    },
-    {
-    title:'Luxury Business Cars',
-    _id: 'foasfoasfjoi1124214j2412',
-    category:'abc3',
-    img : `https://images.pexels.com/photos/3786091/pexels-photo-3786091.jpeg?auto=compress&cs=tinysrgb&w=750`
-}]
+]
 
 const HomeProductCollection = ({products} : {products:IProduct[] | never[]}) => {
  const router = useRouter()
@@ -61,6 +53,8 @@ onClick={()=>router.push('/collection/products')}
 
                       return <CateCard key={i?._id}  title={i?.title} _id={i?._id} 
                        images={i?.img}
+                       list={i?.list}
+                       flip={i?.flip ? true : false}
                        category={i?.category}/>
                   })}
               </Box>

@@ -251,7 +251,6 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
 
       {/* <HomeProductCollection  products={data}/> */}
 
-      <Perks></Perks>
 
       {/* <Container  className='flex center wrap items-center row' sx={{py:5,my:8,mx:'auto',maxWidth:'lg',background:'#f4f8fd',}}>
         <Box>
@@ -270,6 +269,7 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
     {/* <HomeProductsCarousel Collectiontitle={"Browse Our Collections"} delay={3000} data={data?.featuredProducts?.slice(10,18)}/> */}
     {/* <HomeProductsCarousel Collectiontitle={"Browse Our Collections"} delay={3000} data={data?.featuredProducts?.slice(18)}/> */}
 
+    {/* <Perks></Perks>
 
     <Box sx={{my:8,height:'500px',overflow:'hidden'}} className='relative flex center items-center'>
       <Box className="absolute" sx={{width:'100%',height:'100%',top:0,right:0,background:'black',opacity:.5}}></Box>
@@ -293,7 +293,7 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
       </Box>
 
       </Box>        
-      <Testimonials/>
+      <Testimonials/> */}
 
         
         {/* <ContactSection/> */}
