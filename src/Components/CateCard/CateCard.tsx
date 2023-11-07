@@ -14,8 +14,8 @@ const CateCard = ({
     title,
     images,
     flip,
-    category,
     list,
+    price,position,
     _id,
 } : {
     _id: string,
@@ -23,7 +23,9 @@ const CateCard = ({
     list : string[],
     images: string,
     flip?:boolean,
-    category: string,
+    price : string,
+    position ?: string,
+
 }) => {
     const router = useRouter()
     const {addToCart}= useCart()
@@ -52,14 +54,16 @@ const CateCard = ({
         }}>
             <Box 
             className='cursor auto relative'
-               onClick={() => router.push(`/rental/${category}`)}
+               onClick={() => router.push(`/rental/${encodeURIComponent(title) }`)}
             sx={{
                 
                 width:{xs:'98%',sm:'100%',md:'100%'},
                 height: {xs:'400px',sm:'450px',md:'500px'}
             }}>
                 <img
-                style={{  transform: flip? 'scaleX(-1)' : ''}}
+                style={{  
+                    objectPosition : position ? position : 'initial', 
+                    transform: flip? 'scaleX(-1)' : ''}}
                     src={images
                     
                     }
@@ -78,6 +82,12 @@ const CateCard = ({
                                 {i}</Typography>
                             })
                         }
+                         <Typography  sx={{color:'white'}}>
+                              OR similar<br/>
+                        <br/>
+
+                              Starting {price}
+                              </Typography>
       
 </Box>
 
@@ -91,13 +101,14 @@ const CateCard = ({
             }}>  <Typography
             className='limited cursor center text-center '
 
-            onClick={() => router.push(`/rental/${category}`)}
+            onClick={() => router.push(`/rental/${encodeURIComponent(title) }`)}
+
 
                     sx={{
-                    fontSize: {xs:'1.1em',sm:'1.35em'},
+                    fontSize: {xs:'1em',sm:'1.15em'},
                     fontWeight: '500'
                 }}>
-                    {title}
+                    {title} - Starting {price}
                 </Typography>
         
                
