@@ -58,6 +58,7 @@ const CarCard = ({
         
                 if (!i) return
             return <Box 
+            key={i}
             className='cursor auto relative'
             //    onClick={() => router.push(`/rental/${encodeURIComponent(title)}`)}
             sx={{

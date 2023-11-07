@@ -166,7 +166,7 @@ const Index = () => {
          </Box>
        </Grid>
          {/* <ProductReview/>  */}
-       <HomeProductsCarousel Collectiontitle={"Shop More Products"} delay={3000} data={data?.moreProducts} />
+       {/* <HomeProductsCarousel Collectiontitle={"Shop More Products"} delay={3000} data={data?.moreProducts} /> */}
    </Grid> : <Box className='flex auto center align-center' sx={{py:15}}>
 
      <CircularProgress />

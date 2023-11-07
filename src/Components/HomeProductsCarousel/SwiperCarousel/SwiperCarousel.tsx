@@ -65,12 +65,13 @@ const SwiperCarousel = ({selectedCars, delay} : {
                     if (!i) 
                         return
                     return <SwiperSlide
+                    key={i.name}
                     
                         style={{
                             
                         marginRight: '0 !important'
                     }}
-                        key={i._id}>
+                        >
                         {/* <ProductCard
                         inStock={item?.inStock}
                             height={'400px'}
@@ -93,6 +94,7 @@ const SwiperCarousel = ({selectedCars, delay} : {
                     </Typography>
                 <Box sx={{py:{xs:1}}} className="flex gap gap1 wrap">
          {i?.img.map((x:any)=>{ return  <Box 
+         key={x}
             className='cursor auto relative'
             //    onClick={() => router.push(`/rental/${encodeURIComponent(title)}`)}
             sx={{

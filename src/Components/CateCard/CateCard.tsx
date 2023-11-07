@@ -80,7 +80,7 @@ const CateCard = ({
 
                         {
                             list.map(i=>{
-                                return    <Typography  sx={{color:'white'}}>
+                                return    <Typography key={i} sx={{color:'white'}}>
                                 {i}</Typography>
                             })
                         }
