@@ -68,12 +68,12 @@ const NavButtom = () => {
             py:1.5,
 
         }}>
-{/* <Link className=' decor-none uppercase' href={`/collection/products`}>
+{/* <Link className=' decor-none uppercase' href={`/rental/collection`}>
                     <Typography  component='p' sx={{width:'max-content',fontWeight:400,fontSize:{xs:'.7em',sm:'.85em'}}}>
                     Sale
                     </Typography>
                 </Link> */}
-                <Link className='black decor-none ' href={`/collection/products`}>
+                <Link className='black decor-none ' href={`/rental/collection`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none captialize'

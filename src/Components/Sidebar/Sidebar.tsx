@@ -71,7 +71,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
       <ListItem
           sx={{fontWeight:600}}
 
-          onClick={()=>{router.push(`/collection/products`); toggleDrawer(false)}}
+          onClick={()=>{router.push(`/rental/collection`); toggleDrawer(false)}}
            disablePadding>
               <ListItemButton sx={{py:1.5}} >
             
@@ -85,7 +85,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
           <ListItem
           sx={{fontWeight:600}}
 
-          onClick={()=>{router.push(`/collection/products`); toggleDrawer(false)}}
+          onClick={()=>{router.push(`/rental/collection`); toggleDrawer(false)}}
            disablePadding>
               <ListItemButton sx={{py:1}} >
             

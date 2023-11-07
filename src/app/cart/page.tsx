@@ -45,7 +45,7 @@ const EmptyCartAlert = () => {
                     Your Cart Is Empty!
                 </Typography>
               
-                <Link className='flex auto decor-none gap' href='/collection/products'>
+                <Link className='flex auto decor-none gap' href='/rental/collection'>
                     <Btn v2 className='flex auto ' sx={{
                         border:'none',
                         mt: 3
@@ -160,7 +160,7 @@ const Cart = () => {
                     sx={{width:'100%',borderRadius:25,mt:2.5}}>Checkout Now</Btn>
                     </Link>
 
-                    <Link href='/collection/products' className='decor-none'>
+                    <Link href='/rental/collection' className='decor-none'>
 
                     <Btn
                     

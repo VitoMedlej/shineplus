@@ -6,10 +6,11 @@ import { IProduct } from '@/Types/Types'
 import Btn from '../Btn/Btn'
 import SwiperCarousel from './SwiperCarousel/SwiperCarousel'
 import { useRouter } from 'next/navigation'
-const ProductCollection = ({sx,delay,Collectiontitle,data,setQuickView} : {
+import Perks from '../Perks/Perks'
+const ProductCollection = ({sx,delay,Collectiontitle,selectedCars,setQuickView} : {
     Collectiontitle: string,
     delay : number,
-    data: IProduct[],
+    selectedCars: any[],
     sx ?: any;
     setQuickView ?: Dispatch<SetStateAction<{
         isOpen: boolean;
@@ -41,14 +42,14 @@ const ProductCollection = ({sx,delay,Collectiontitle,data,setQuickView} : {
                     sm: '1.4em'
                 },
                 padding:.5,
-                fontWeight: '300'
+                fontWeight: '500'
             }}>
               {Collectiontitle}
             </Typography>
             
             <Btn
-            onClick={()=>router.push('/collection/products')}>
-                Shop All
+            onClick={()=>router.push('/')}>
+                View All
             </Btn>
             </Box>
             
@@ -62,7 +63,10 @@ const ProductCollection = ({sx,delay,Collectiontitle,data,setQuickView} : {
                 <SwiperCarousel
                 delay={delay}
                 
-                data={data && data.length > 0 && data?.slice(0,25) || []}/>
+                selectedCars={selectedCars}/>
+            </Box>
+            <Box>
+                <Perks/>
             </Box>
 
    

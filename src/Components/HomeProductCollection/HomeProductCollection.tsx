@@ -9,7 +9,7 @@ import CateCard from '../CateCard/CateCard'
 
 
 
-const collectionCars = [
+export const collectionCars = [
     {title:'Small Touristic Cars',
     _id: 'foasfoasfjoi1j2412',
     list: [`kia Picanto`,`Hyundai Grand  I10`,'Nissan Micra'],
@@ -31,8 +31,8 @@ const collectionCars = [
           {
             name: "Nissan Micra",
             img: [
+              "https://ucarecdn.com/af616624-6479-474b-bc09-8830149722cb/Addasubheading7.png",
               "https://ucarecdn.com/d5810440-682a-44f9-9ae3-e4f9ef1e1c68/nissanmicrainside.jpg",
-              "https://ucarecdn.com/af616624-6479-474b-bc09-8830149722cb/Addasubheading7.png"
             ]
           }
 
@@ -168,7 +168,7 @@ const collectionCars = [
  ,
   {
     _id: 'asfasf2412fasfasf', 
-    title: " Convertible Cars",
+    title: "Convertible Cars",
     price: "150$ Per Day",
     position: 'left',
     list: [
@@ -177,7 +177,7 @@ const collectionCars = [
       
        
       ],
-    img:`https://ucarecdn.com/d4747151-56df-4d24-964a-1604d5773caf/mercedesvclass.jpg`
+    img:`https://vehicle-images.dealerinspire.com/f1f8-11000845/W1K1K5KB2PF196966/a2f6b7732fff62ce2ccf6f0b210fc26a.jpg`
 
   },
   {
@@ -193,14 +193,14 @@ const collectionCars = [
       
        
       ],
-    img:`https://ucarecdn.com/d4747151-56df-4d24-964a-1604d5773caf/mercedesvclass.jpg`
+    img:`https://ucarecdn.com/34ddcb73-a1df-4521-beee-10b75a054709/3.png`
 
   },
   {
     _id: 'asfasf2412fasfasf', 
     title: " Wedding Services - Wedding Cars",
     price: "",
-    position: 'left',
+    position: 'right',
     list: [
      ` Jaguar XF`,
      ` Mercedes S Class`,
@@ -215,7 +215,8 @@ const collectionCars = [
       
        
       ],
-    img:`https://ucarecdn.com/d4747151-56df-4d24-964a-1604d5773caf/mercedesvclass.jpg`
+      flip:true,
+    img:`https://ucarecdn.com/db79b3ac-bcf7-42da-b760-2f087c17f1f9/mercedesbenz_sclass_s400_w222__1694079125_5fc2ae8b_progressive.jpg`
 
   }
   
@@ -265,9 +266,9 @@ const HomeProductCollection = ({products} : {products:IProduct[] | never[]}) => 
 </Typography>
 
 <Btn
-onClick={()=>router.push('/collection/products')}
+onClick={()=>router.push('/rental/collection')}
 >
-    Shop All
+    View All
 </Btn>
 </Box>
 
@@ -276,6 +277,7 @@ onClick={()=>router.push('/collection/products')}
 
                       return <CateCard key={i?._id}  title={i?.title} _id={i?._id} 
                        images={i?.img}
+                       cars={i?.cars && i?.cars?.length > 0 ? true : false}
                        price={i?.price}
                        position={i?.position}
                        list={i?.list}

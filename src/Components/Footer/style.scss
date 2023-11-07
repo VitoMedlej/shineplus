@@ -1,7 +1,7 @@
 footer {
 
   .container {
-      background: white;
+      background: black;
       max-width: 1200px;
       margin: 0 auto;
       padding: 1em;
@@ -26,7 +26,7 @@ footer {
           min-width: 170px;
           li {
               a {
-                  color :#262626d0;
+                  color :#dbdbdbd0;
                   text-decoration: none !important;
               }
               padding: .14em 0;
@@ -35,12 +35,12 @@ footer {
               font-weight: 500;
               padding: 0 0 .65em 0;
               font-size: 1.1em;
-              color:rgba(0, 0, 0, 0.87);font-weight: 600 !important;
+              color:rgba(234, 234, 234, 0.87);font-weight: 600 !important;
           }
       }
   }
   .footer-p {
-      color:rgba(46, 46, 46, 0.635);
+      color:rgba(240, 240, 240, 0.635);
   }
   .site-footer__bottom {
       div {
@@ -195,7 +195,7 @@ $breakpoint-value: map-get($breakpoints, $breakpoint);
     }
     h6 {
       display: flex;
-      color: #000;
+      color: #dadada;
       font-weight: 300;
       align-items: center;
       margin-bottom: 33px;
@@ -239,7 +239,7 @@ $breakpoint-value: map-get($breakpoints, $breakpoint);
       }
       li {
         font-size: 14px;
-        color: #000;
+        color: #d2d2d2;
         margin-bottom: 12px;
         @include breakpoint(phone) {
           margin-bottom: 15px;

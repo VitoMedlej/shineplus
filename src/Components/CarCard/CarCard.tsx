@@ -10,25 +10,26 @@ import { FaTumblrSquare } from 'react-icons/fa'
 
 
 
-const CateCard = ({
+const CarCard = ({
     title,
     images,
     flip,
     list,
+    cars,
     price,position,
     _id,
-    cars
 } : {
     _id: string,
     title: string,
-    cars:boolean,
     list : string[],
     images: string,
+    cars: any,
     flip?:boolean,
     price : string,
     position ?: string,
 
 }) => {
+    console.log('cars: ', cars);
     const router = useRouter()
     const {addToCart}= useCart()
     const [hovered,setHover] = useState(false)
@@ -38,68 +39,48 @@ const CateCard = ({
         <Box
             onMouseEnter={()=>setHover(true)}
             onMouseLeave={()=>setHover(false)}
-            className='  trans cardproduct center text-center'
+            className='flex wrap row  trans cardproduct center text-center'
             sx={{
             // boxShadow: `rgba(0, 0, 0, 0.05) 0px 0px 0px 1px`,
             // border : '1px solid #000000a',
             py: 1,
             margin: '0em auto',
-            my:1,
+            my:8,
             maxWidth:{md:'400px'},
-            minWidth: {xs:'95%',sm:'30%'},
-            width:  {
-                    xs: '99%',
-                    sm: '49%',
-                    md : '32%'
-                }
+            minWidth: {xs:'95%',sm:'100%'},
+            width: 
+                     '98%',
+                   
+               
             
         }}>
-            <Box 
+           {cars && cars.img.map((i:any,idx:number) =>{
+        
+            
+            return <Box 
             className='cursor auto relative'
-               onClick={() => router.push(`/rental/${encodeURIComponent(title) }`)}
+            //    onClick={() => router.push(`/rental/${encodeURIComponent(title)}`)}
             sx={{
-                pointerEvents: cars ? 'all' : 'none',
-                width:{xs:'98%',sm:'100%',md:'100%'},
+                
+                width:{xs:'98%',sm:'500%',md:'48%'},
                 height: {xs:'400px',sm:'450px',md:'500px'}
             }}>
                 <img
                 style={{  
                     objectPosition : position ? position : 'initial', 
                     transform: flip? 'scaleX(-1)' : ''}}
-                    src={images
-                    
-                    }
+                    src={i
+}
                     alt="Prdouct image"
                     className="img cover "/>
-                    <Box className="absolute center auto flex trans2  items-center" sx={{pointerEvent:'none',opacity:hovered ? '.8' : '0',width:'100%',zIndex:132,height:'100%',background:'black',top:0,right:0}}>
-                   <Box>
-
-                    <Typography className='' sx={{fontSize:'1.5em',fontWeight:600,pb:1,height:'100%',color:'white',zIndex:24142}}>
-                            {title}
-                        </Typography>
-
-                        {
-                            list.map(i=>{
-                                return    <Typography  sx={{color:'white'}}>
-                                {i}</Typography>
-                            })
-                        }
-                         <Typography  sx={{color:'white'}}>
-                              OR similar<br/>
-                        <br/>
-
-                              Starting {price}
-                              </Typography>
-      
-</Box>
-
-                    </Box>
-            </Box>
+               
+            </Box>})}
             
             <Box 
             sx={{
                 px: .95,
                 mt:1.5,
+                flex:1,width:'100%'
             }}>  <Typography
             className='limited cursor center text-center '
 
@@ -107,8 +88,7 @@ const CateCard = ({
 
 
                     sx={{
-                        pointerEvents: cars ? 'all' : 'none',
-                    fontSize: {xs:'1em',sm:'1em'},
+                    fontSize: {xs:'1em',sm:'1.15em'},
                     fontWeight: '500'
                 }}>
                     {title} - Starting {price}
@@ -122,4 +102,19 @@ const CateCard = ({
     )
 }
 
-export default CateCard
+export default CarCard
+
+
+{/* <Box className="absolute center auto flex trans2  items-center" sx={{pointerEvent:'none',opacity:hovered ? '.8' : '0',width:'100%',zIndex:132,height:'100%',background:'black',top:0,right:0}}>
+<Box>
+
+ <Typography className='' sx={{fontSize:'1.5em',fontWeight:600,pb:1,height:'100%',color:'white',zIndex:24142}}>
+         {car.name}
+     </Typography>
+
+  
+ 
+
+</Box>
+
+ </Box> */}

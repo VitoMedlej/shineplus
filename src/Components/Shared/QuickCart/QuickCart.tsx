@@ -120,7 +120,7 @@ export default function TemporaryDrawer() {
                     background:'none',
                           my:1,
                             }}
-                        onClick={()=>{setCartOpen(false),router.push('/collection/products')}}
+                        onClick={()=>{setCartOpen(false),router.push('/rental/collection')}}
                          >
                         Continue Shopping
                         </Btn>

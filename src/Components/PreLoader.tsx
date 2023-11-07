@@ -19,23 +19,23 @@ PreLoader = ({data,resImages}:any) => {
   const textsArray = [
     {
       id: 1,
-      title: text('100% Natural', '100٪ طبيعي'),
-      desc: text('Our supplements are made from only the finest natural ingredients, ensuring that you get the best possible results without any harmful chemicals or additives.', 'مكملاتنا مصنوعة فقط من أرقى المكونات الطبيعية، مما يضمن لك الحصول على أفضل النتائج دون أي مواد كيميائية ضارة أو مواد إضافية.')
+      title: `Exceptional Customer Service`,
+      desc: text('Our dedicated team is here to assist you at every step of your rental journey. We prioritize your satisfaction and convenience.', 'مكملاتنا مصنوعة فقط من أرقى المكونات الطبيعية، مما يضمن لك الحصول على أفضل النتائج دون أي مواد كيميائية ضارة أو مواد إضافية.')
     },
     {
       id: 2,
-      title: text('Purity and Potency', 'النقاء والفعالية'),
-      desc: text('We carefully select our ingredients for their purity and potency, ensuring that you get the best possible results from our supplements.', 'نحن نختار مكوناتنا بعناية بسبب نقاوتها وفعاليتها، مما يضمن لك الحصول على أفضل النتائج من مكملاتنا.')
+      title: text('Flexible Rental Options', 'النقاء والفعالية'),
+      desc: text(`Whether you need a car for a day, a week, or longer, we offer flexible rental durations to suit your schedule. You're in control of your rental experience with Al Halabi.`, 'نحن نختار مكوناتنا بعناية بسبب نقاوتها وفعاليتها، مما يضمن لك الحصول على أفضل النتائج من مكملاتنا.')
     },
     {
       id: 3,
-      title: text('Expertly Formulated', 'صياغة خبيرة'),
-      desc: text('Our supplements are expertly formulated by our team of experienced professionals, ensuring that you get the best possible results every time.', 'تم صياغة مكملاتنا بخبرة من قبل فريق من المحترفين ذوي الخبرة، مما يضمن لك الحصول على أفضل النتائج في كل مرة.')
+      title: text('Competitive Pricing', 'صياغة خبيرة'),
+      desc: text(`We offer affordable rates without compromising on the quality of our service. Enjoy the best value for your money when you choose Al Halabi.`, 'تم صياغة مكملاتنا بخبرة من قبل فريق من المحترفين ذوي الخبرة، مما يضمن لك الحصول على أفضل النتائج في كل مرة.')
     },
     {
       id: 4,
-      title: text('Great Value', 'قيمة عظيمة'),
-      desc: text('Our supplements offer great value for money, providing you with the highest quality ingredients at an affordable price.', 'تقدم مكملاتنا قيمة عظيمة للمال، حيث توفر لك أعلى جودة من المكونات بسعر معقول.')
+      title: text('Diverse Selection of Vehicles', 'قيمة عظيمة'),
+      desc: text('Our extensive fleet includes business cars, SUVs, and family cars, ensuring you find the right vehicle for your specific needs.', 'تقدم مكملاتنا قيمة عظيمة للمال، حيث توفر لك أعلى جودة من المكونات بسعر معقول.')
     }
   ];
   
@@ -77,11 +77,11 @@ PreLoader = ({data,resImages}:any) => {
     </Grid> */}
     <Grid  maxWidth='lg' item xs={12} sx={{mt:{xs:8,sm:12}}}>
       <Typography sx={{fontSize:{xs:'2em',sm:'3em'},fontWeight:600}} className='center text-center auto color'>
-      {text('Why Choose Us for Your Car Rental Needs', 'لماذا تختار ترو ناشور بليند؟')}
+      {text('Why Choose Us?', 'لماذا تختار ترو ناشور بليند؟')}
 
       </Typography>
       <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
-      {text('Our extensive fleet includes business cars, SUVs, and family cars, ensuring you find the right vehicle for your specific needs.', 'مكملاتنا مصنوعة فقط من أرقى المكونات الطبيعية، تم اختيارها بعناية بسبب نقاوتها وفعاليتها. منتجاتنا خالية من المواد الكيميائية الضارة.')}
+      {text('High-quality car rental services in Lebanon.', 'مكملاتنا مصنوعة فقط من أرقى المكونات الطبيعية، تم اختيارها بعناية بسبب نقاوتها وفعاليتها. منتجاتنا خالية من المواد الكيميائية الضارة.')}
 
         </Typography>
     </Grid>
@@ -109,7 +109,7 @@ PreLoader = ({data,resImages}:any) => {
     {/* <Box className='flex auto wrap ' sx={{justifyContent:'space-between',width:'100%',maxWidth:'xl'}}>
       {
         resImages?.categoryImage && resImages?.categoryImage.map((img:any)=>{
-          return <Box className='cursor' onClick={()=>router.push('/collection/products')} key={img?.img} sx={{minWidth:'200px',my:1,width:{xs:'99%',sm:'49%',md:'48%'}}}>
+          return <Box className='cursor' onClick={()=>router.push('/rental/collection')} key={img?.img} sx={{minWidth:'200px',my:1,width:{xs:'99%',sm:'49%',md:'48%'}}}>
             <img src={img?.img} alt="Category Image Shop Now" className="img" />
           </Box>
         })
@@ -223,7 +223,7 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
 
                     </Typography>
                     <Btn
-        onClick={()=>router.push('/collection/products')}
+        onClick={()=>router.push('/rental/collection')}
                     
                     sx={{border:'none',mx:'auto'}}>
                     {text('SHOP NOW', 'تسوق الآن')}
@@ -237,7 +237,7 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
                     <Typography className='center text-center' sx={{fontSize:'3em',textShadow:' #000000cc',color:'white'}}>{text('Organic Herbs', 'أعشاب عضوية')}
 </Typography>
                     <Btn
-            onClick={()=>router.push('/collection/products')}
+            onClick={()=>router.push('/rental/collection')}
 
                     
                     sx={{border:'none',mx:'auto'}}>
@@ -293,9 +293,10 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
       </Box>
 
       </Box>        
-      <Testimonials/> */}
+      // */}
 
-        
+<Testimonials/>
+<Perks></Perks>
         {/* <ContactSection/> */}
   </Box>
   )

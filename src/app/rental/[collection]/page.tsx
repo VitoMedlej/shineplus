@@ -7,7 +7,7 @@ import Preloader2 from "@/Components/Preloader2"
 
 
 
-const Page = async(ctx : any) => {
+const Page = (ctx : any) => {
   
   try {
     const {category} = ctx?.params

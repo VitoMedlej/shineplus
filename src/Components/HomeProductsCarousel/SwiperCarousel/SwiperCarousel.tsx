@@ -2,14 +2,16 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {FreeMode, Autoplay, Pagination} from "swiper";
 import 'swiper/css';
-import {Box} from '@mui/material';
+import {Box, Typography} from '@mui/material';
 import ProductCard from '@/Components/ProductCard/ProductCard';
 import {IProduct} from '@/Types/Types';
+import CarCard from '@/Components/CarCard/CarCard';
 
-const SwiperCarousel = ({data, delay} : {
-    data: IProduct[],
+const SwiperCarousel = ({selectedCars, delay} : {
+    selectedCars: any,
     delay?: number
 }) => {
+    console.log('selectedCars2: ', selectedCars);
 
     return (
         <Box
@@ -42,17 +44,17 @@ const SwiperCarousel = ({data, delay} : {
             modules={[FreeMode,Autoplay, Pagination]}
             breakpoints={{
                 200 : {
-                    slidesPerView:2,
+                    slidesPerView:1,
                 },
                 540: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                   },
                   
                   1024: {
-                    slidesPerView: 4,
+                    slidesPerView: 1,
                   },
                   1640: {
-                    slidesPerView: 4,
+                    slidesPerView: 1,
                   },
                 
                
@@ -60,15 +62,18 @@ const SwiperCarousel = ({data, delay} : {
         
         >
 
-                {data && data.length > 0 && data.map((item : any) => {
-                    if (!item._id) 
+                {selectedCars?.cars  && selectedCars?.cars.map((i : any,idx:number) => {
+                    console.log('i: ', i);
+                    if (!i) 
                         return
                     return <SwiperSlide
+                    
                         style={{
+                            
                         marginRight: '0 !important'
                     }}
-                        key={item._id}>
-                        <ProductCard
+                        key={i._id}>
+                        {/* <ProductCard
                         inStock={item?.inStock}
                             height={'400px'}
                             width='100%'
@@ -76,7 +81,38 @@ const SwiperCarousel = ({data, delay} : {
                             images={item.images}
                             price={item.price}
                             _id={item._id}
-                            category={item.category}/>
+                            category={item.category}/> */}
+                    {/* <CarCard
+           
+
+                _id={i._id}
+                title={i.title}
+                price={i.price}
+
+                cars={i} list={i.list} images={''}/> */}
+                    <Typography className='center flex auto' sx={{pb:1,fontSize:'1.25em'}}>
+                        {i.name}
+                    </Typography>
+                <Box sx={{py:{xs:1}}} className="flex gap gap1 wrap">
+         {i?.img.map((x:any)=>{ return  <Box 
+            className='cursor auto relative'
+            //    onClick={() => router.push(`/rental/${encodeURIComponent(title)}`)}
+            sx={{
+                
+                width:{xs:'98%',sm:'500%',md:'48%'},
+                height: {xs:'300px',sm:'450px',md:'400px'}
+            }}>
+                <img
+                style={{  
+                 }}
+                    src={x
+}
+                    alt="Prdouct image"
+                    className="img cover "/>
+               
+            </Box>})}
+            </Box>
+
                     </SwiperSlide>
                     // return <SwiperSlide className='swiper-wrapper1'
                     // style={{width:'100%',height:'100%'}} key={item._id}>     {/* <HouseCard

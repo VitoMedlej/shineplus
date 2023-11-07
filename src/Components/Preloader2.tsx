@@ -10,6 +10,10 @@ import { IProduct } from '@/Types/Types'
 import ProductCard from './ProductCard/ProductCard'
 import SearchInput from './Navbar/SearchInput'
 
+import { collectionCars } from './HomeProductCollection/HomeProductCollection'
+import CarCard from './CarCard/CarCard'
+import HomeProductsCarousel from './HomeProductsCarousel/HomeProductsCarousel'
+
 const Preloader2 = ({data,totalPages}:any) => {
    
     // const [pageNB,setPageNB] = useState(0)
@@ -23,11 +27,17 @@ const Preloader2 = ({data,totalPages}:any) => {
       
     // }, [data])
     
-    const {category} = useParams() 
+    const {collection} = useParams() 
+    console.log('category: ', collection);
     const searchParams = useSearchParams();
     const type =  searchParams.get('type')
     const subCategory   =  searchParams.get('subCategory')
+ 
 
+    const selectedCars : any = collectionCars.find(x=>  x.title.toLocaleLowerCase() === decodeURIComponent(collection.toLocaleLowerCase()) )    
+    console.log('selectedCars: ', selectedCars);
+
+  
 
 
     // const {type} = useSearchParams();
@@ -36,7 +46,7 @@ const Preloader2 = ({data,totalPages}:any) => {
 
 
     const fetchData = async (val:number) => {
-    const url =  `/api/get-cate?category=${category ? category : 'collection'}&subCategory=${subCategory ? encodeURIComponent(subCategory) : null}&page=${Number(val - 1) || 0}&type=${type ? type : null}`  ;
+    const url =  `/api/get-cate?category=${collection ? collection : 'collection'}&subCategory=${subCategory ? encodeURIComponent(subCategory) : null}&page=${Number(val - 1) || 0}&type=${type ? type : null}`  ;
     const req = await fetch(`${server}${url}`,{cache:'no-store', next: { revalidate: 0 }})
     const res = await req.json()
         
@@ -68,26 +78,34 @@ const Preloader2 = ({data,totalPages}:any) => {
     }}>
     </Box> */}
     {/* <SearchInput/> */}
+    
+    <Typography sx={{fontWeight:700,fontSize:'3em',pt:8,pb:0}}  className='auto text-center align-center center  flex'>
+    {selectedCars?.title}
+        </Typography>
+        <Typography sx={{fontWeight:300,fontSize:'1.25em',pt:0,pb:2}}  className='auto center  flex'>
+    Starting {selectedCars?.price}
+
+        </Typography>
     {/* <BreadCrumb></BreadCrumb> */}
    
 
     <Box className='flex wrap' sx={{
         px: 1
     }}>
-        {products && products?.length > 0 ? products.map((i:IProduct) => {
-            return <ProductCard
-            key={i?._id}
-            inStock={i?.inStock 
-            }
+        <HomeProductsCarousel selectedCars={selectedCars} Collectiontitle={''} delay={0}/>
+        {/* {selectedCars && selectedCars?.cars.length > 0 ? selectedCars?.cars.map((i:any) => {
+            return <CarCard
+                key={i?._id}
+
                 _id={i._id}
                 title={i.title}
                 price={i.price}
-                images={i.images}
-                category={i.category}/>
+
+                cars={i} list={i.list} images={''}/>
         })
 : <Typography sx={{fontSize:'1.1em',py:4,textAlign:'center'}}>
 We could not find any cars, try another category.
-</Typography>}
+</Typography>} */}
     </Box>
     <Pagination
         onChange={(e, val) => {

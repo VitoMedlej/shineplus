@@ -135,7 +135,7 @@ export default function Navbar() {
                             {text('العربية','English')}
                         </Btn> */}
                         <IconButton
-                            onClick={() => router.push('/collection/products')}
+                            onClick={() => router.push('/rental/collection')}
                             sx={{
                                 margin : '8px',padding:0,
                             color: 'white'
@@ -231,7 +231,7 @@ mobile
                           
                         </IconButton>
                         <IconButton
-                        onClick={() => router.push('/collection/products')}
+                        onClick={() => router.push('/rental/collection')}
                             sx={{
                             color: 'white'
                         }}>

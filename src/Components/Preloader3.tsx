@@ -15,11 +15,11 @@ import useLanguage from '@/Hooks/useLanguage';
 const Preloader3 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState([
-        {img : `https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1740&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`},
-        {img:`https://images.unsplash.com/photo-1653813893853-be3e6ecfe061?auto=format&fit=crop&q=80&w=1740&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
+        {img : `https://ucarecdn.com/674fcd0e-3990-403d-84de-ef8f6b6351b9/peakpx2.jpg`},
+        {img:`https://ucarecdn.com/4990a185-a2ea-43fb-ac9b-c8b7a00fe0d5/download.jfif`}
      ])
      const redir = () => {
-        router.push('/collection/products')
+        router.push('/rental/collection')
         console.log('abc')
      }
     useEffect(() => {

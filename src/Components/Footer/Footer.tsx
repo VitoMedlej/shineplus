@@ -8,8 +8,8 @@ import './style.css'
 
 
 const Footer = () => (
-  <footer className="site-footer " style={{color:'black',background:'white'}}>
-    <div className="container " style={{color:'black',background:'white'}}>
+  <footer className="site-footer " style={{color:'white',background:'black'}}>
+    <div className="container " style={{color:'white',background:'black'}}>
       <div className="site-footer__top ">
         <div className="site-footer__description">
           <div className='logos cursor'>
@@ -18,7 +18,7 @@ const Footer = () => (
               {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img style={{filter:'invert(1)'}} className='img ' src='https://ucarecdn.com/36652ae5-ba61-45de-b9e2-dc30dd210f57/whitelogo.png' alt="Al halabi Lebanon Logo" />
+            <img className='img ' src='https://ucarecdn.com/36652ae5-ba61-45de-b9e2-dc30dd210f57/whitelogo.png' alt="Al halabi Lebanon Logo" />
             </Link>
           </div>
           <Typography component='h1' sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
@@ -42,13 +42,13 @@ const Footer = () => (
           <ul className=' ul-white'>
             <li className='link-title'>Site links</li>
             <li><Link  href="/">Home</Link></li>
-            <li><Link href="/collection/products">All Products</Link></li> 
+            <li><Link href="/rental/collection">All Products</Link></li> 
             <li><Link href="/terms-and-conditions">Terms & Conditions</Link></li>
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
             <li><Link href="https://wa.me/+96170444022">Contact Us</Link></li>
           </ul>
      
-          <ul  className='ul-white' style={{color:'black'}}>
+          <ul  className='ul-white' style={{color:'white'}}>
             <li className='link-title'>Contact</li>
             {/* <li><Link href="mailto:sales@thecraftroom-lb.com">sales@petstown.com</Link></li> */}
             
@@ -63,10 +63,10 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="site-footer__bottom " style={{color:'black',borderTop:"1px solid #0000001f"}}>
-      <div className="container " style={{color:'black'}}>
+    <div className="site-footer__bottom " style={{color:'white',borderTop:"1px solid #0000001f"}}>
+      <div className="container " style={{color:'white'}}>
         <p>Website Developed By{' '}
-          <a style={{ color: 'black' }} href={`${'https://www.onbeirut.com'}`}>OnBeirut Agency </a></p>
+          <a style={{ color: 'white' }} href={`${'https://www.onbeirut.com'}`}>OnBeirut Agency </a></p>
       </div>
     </div>
   </footer>

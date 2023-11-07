@@ -1,5 +1,5 @@
 footer .container {
-  background: white;
+  background: black;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1em;
@@ -27,18 +27,18 @@ footer .site-footer__links ul li {
   padding: 0.14em 0;
 }
 footer .site-footer__links ul li a {
-  color: rgba(38, 38, 38, 0.8156862745);
+  color: rgba(219, 219, 219, 0.8156862745);
   text-decoration: none !important;
 }
 footer .site-footer__links ul .link-title {
   font-weight: 500;
   padding: 0 0 0.65em 0;
   font-size: 1.1em;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(234, 234, 234, 0.87);
   font-weight: 600 !important;
 }
 footer .footer-p {
-  color: rgba(46, 46, 46, 0.635);
+  color: rgba(240, 240, 240, 0.635);
 }
 footer .site-footer__bottom div p {
   align-items: center;
@@ -158,7 +158,7 @@ button[disabled] {
 }
 .site-footer .site-footer__description h6 {
   display: flex;
-  color: #000;
+  color: #dadada;
   font-weight: 300;
   align-items: center;
   margin-bottom: 33px;
@@ -209,7 +209,7 @@ button[disabled] {
 }
 .site-footer .site-footer__links ul li {
   font-size: 14px;
-  color: #000;
+  color: #d2d2d2;
   margin-bottom: 12px;
 }
 @media (min-width: 767px) {
