@@ -34,7 +34,7 @@ const Preloader2 = ({data,totalPages}:any) => {
     const subCategory   =  searchParams.get('subCategory')
  
 
-    const selectedCars : any = collectionCars.find(x=>  x.title.toLocaleLowerCase() === decodeURIComponent(collection.toLocaleLowerCase()) )    
+    const selectedCars : any = collectionCars?.find(x=>  x?.title?.toLocaleLowerCase() === decodeURIComponent(collection.toLocaleLowerCase()) )    
     console.log('selectedCars: ', selectedCars);
 
   

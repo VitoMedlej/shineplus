@@ -3,9 +3,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import {FreeMode, Autoplay, Pagination} from "swiper";
 import 'swiper/css';
 import {Box, Typography} from '@mui/material';
-import ProductCard from '@/Components/ProductCard/ProductCard';
-import {IProduct} from '@/Types/Types';
-import CarCard from '@/Components/CarCard/CarCard';
+
 
 const SwiperCarousel = ({selectedCars, delay} : {
     selectedCars: any,
@@ -91,7 +89,7 @@ const SwiperCarousel = ({selectedCars, delay} : {
 
                 cars={i} list={i.list} images={''}/> */}
                     <Typography className='center flex auto' sx={{pb:1,fontSize:'1.25em'}}>
-                        {i.name}
+                        {i?.name}
                     </Typography>
                 <Box sx={{py:{xs:1}}} className="flex gap gap1 wrap">
          {i?.img.map((x:any)=>{ return  <Box 

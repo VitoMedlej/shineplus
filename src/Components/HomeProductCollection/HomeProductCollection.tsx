@@ -67,7 +67,25 @@ export const collectionCars = [
     price: "25$ Per Day",
     position: 'left',
     list: ["Hyundai Elantra", "Toyota Corolla", "Toyota Raize", `kia Cerato `,"Toyota Veloz"],
+    cars :[
     
+      {name:`Toyota Corolla`,img:['https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/SQLSQWBGDNFDHIOFIGI63VNRHU.jpg',`https://ucarecdn.com/87fcfb07-3993-4eef-b678-864fb837b73c/toyotacorolla2023interior.jpg`]}
+      ,{
+        name:`Toyota Raize
+        `,img:[`https://ucarecdn.com/ad94d368-5e50-4c75-ba67-8520b7baec7e/toyotaraize.jpg`,`https://ucarecdn.com/75500df4-d115-4425-a634-c8a817942b5e/Toyota_Raize_2023interior.webp`]
+      }
+      ,{
+        name:`Toyota Veloz`,img:[`https://ucarecdn.com/7cf004bc-e12a-4f4d-94ad-07a23728a20f/2023_Toyota_Veloz.png`,`https://ucarecdn.com/939bf9bd-f16e-4fa5-b626-763f44520832/toyotavelozinterior.jpg`]
+      }
+      ,{
+        name:`kia Cerato`,img:[`https://ucarecdn.com/bc4f38b8-c032-421c-b9d8-190599fa86bf/kiacerato.webp`,`https://ucarecdn.com/250aa0c2-3586-4792-bb20-f76b64024f98/kiaceratoinside.jpg`]
+      }
+      
+      ,{
+        name:`Hyundai Elantra`,img:[`https://ucarecdn.com/a36f1a6f-3145-42e6-b442-b5d162161668/2023Hyundai.webp`,`https://ucarecdn.com/84bcc4d1-77d8-45be-af69-49802faf61ce/elantrainterior.webp`]
+      }
+     
+    ],
     img:`https://www.motortrend.com/uploads/2022/07/2023-Hyundai-Elantra-Hybrid-Limited-4.jpg?fit=around%7C875:492.1875`
 
   },
@@ -78,6 +96,26 @@ export const collectionCars = [
     position: 'right',
     list: ["Nissan Xtrail", "Toyota Urban Cruiser", "Hyundai Tucson    ", `Renault Koleos `,"Chevrolet Captiva",`kia Sportage
     `],
+    cars : [
+      {
+        name:`Toyota Urban Cruiser`,img:[`https://ucarecdn.com/5e96c807-ffeb-4a10-8e94-1bf5b19e4ada/toyotaurbancruiser.webp`,`https://ucarecdn.com/7e265fd9-7a15-4b73-b134-6f52c930d142/toyotaurbancruiserinterior.webp`]
+      },
+      {
+        name:`Hyundai Tucson`,img:[`https://ucarecdn.com/661abb40-c540-4a9b-8104-18936bd18693/hyundaitucson.png`,`https://ucarecdn.com/b46cb6cd-0a43-4b9f-a5c6-52ec84634557/2023_hyundai_tucson_interior.jpg`]
+      },
+      {
+        name:`Renault Koleos`,img:[`https://ucarecdn.com/17febde1-44dd-4717-b5a7-8ded1d897c66/renaultkelios.jpg`,`https://ucarecdn.com/f8334db9-a545-40cf-b4b8-c6dce6b0cc74/renaultkoleosinterior.webp`]
+      },
+      {
+        name:`Chevrolet Captiva`,img:[`https://ucarecdn.com/a1e0caaa-15e7-46f1-9b8c-231ca09187f5/chevroletcaptiva.webp`,`https://ucarecdn.com/e9a7a80f-9dd7-49c4-b809-b1366895b203/chevroletcaptivainterior.jpeg`]
+      },
+      {
+        name:`kia Sportage`,img:[`https://ucarecdn.com/31f7c168-1a17-4bdf-9b29-ca48e50a059a/kiasportage.jpeg`,`https://ucarecdn.com/9f6624e5-2400-4dde-83b2-8bc46646e652/kiasportageint.jpg`]
+      },
+      {
+        name:`Nissan Xtrail`,img:[`https://ucarecdn.com/635e81c5-d581-4f76-a06c-fd5da9f68bb6/Nissan_X_Trail_2023.jpg`,`https://ucarecdn.com/fb0bcb4b-a408-4aaa-b93a-c72ea0f3effc/nissanxtrailinside.jpg`]
+      },
+    ],
     flip:true,
     img:`https://topauto.co.za/wp-content/uploads/2023/04/2023-Toyota-Urban-Cruiser-Header.jpg`
 
@@ -274,7 +312,7 @@ onClick={()=>router.push('/rental/collection')}
 
               <Box sx={{mb:2,mt:4}} className='flex wrap gap1 justify-center'>
                   {collectionCars.map(i=>{
-
+                    if (!i ) return
                       return <CateCard key={i?._id}  title={i?.title} _id={i?._id} 
                        images={i?.img}
                        cars={i?.cars && i?.cars?.length > 0 ? true : false}

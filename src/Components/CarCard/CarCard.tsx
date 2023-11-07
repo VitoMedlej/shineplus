@@ -56,7 +56,7 @@ const CarCard = ({
         }}>
            {cars && cars.img.map((i:any,idx:number) =>{
         
-            
+                if (!i) return
             return <Box 
             className='cursor auto relative'
             //    onClick={() => router.push(`/rental/${encodeURIComponent(title)}`)}
