@@ -134,6 +134,8 @@ export default function Navbar() {
                         }}>
                             {text('العربية','English')}
                         </Btn> */}
+                        <a style={{textDecoration:'none',borderRadius:'2000px',background:'transparent'}} href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} target='_blank' rel='noopener'>
+
                         <IconButton
                             onClick={() => router.push('/rental/collection')}
                             sx={{
@@ -148,6 +150,8 @@ export default function Navbar() {
                                 Cart
                             </Typography> */}
                         </IconButton>
+                        </a>
+
     <IconButton
                             onClick={() => setOpen(!open)}
                             size="large"
