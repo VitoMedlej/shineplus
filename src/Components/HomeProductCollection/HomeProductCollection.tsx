@@ -130,7 +130,43 @@ export const collectionCars = [
     "BMW X3",
     "Nissan Rogue",
     "Nissan Pathfinder"],
-
+    cars: [
+      {
+        name: "Hyundai Santa Fe",
+        img: [
+          "https://ucarecdn.com/d73dd459-c1db-4660-94ef-32e31c63a447/2023HyundaiSantaFe.webp",
+          "https://ucarecdn.com/b3949dba-93a7-41ea-a91b-addb6fee3741/2023santafeinside.webp"
+        ]
+      },
+      {
+        name: "Kia Sorento",
+        img: [
+          "https://ucarecdn.com/aec8db56-fde3-4146-8b20-ebf66b52ba1a/kiasorentoinside.jpg",
+          "https://ucarecdn.com/d424d573-01cf-4b10-a654-660d816b51f9/2023_Kia_Sorento.webp"
+        ],
+      },
+      { 
+        name: "BMW X3", 
+        img: [
+          "https://ucarecdn.com/8c4e4c5a-4daa-4bea-9b4a-4079c7443cfe/2022bmwx3.jpg",
+          "https://ucarecdn.com/8d2ea081-fbee-426e-a901-10bb31aaa8a8/bmwx3interior.jpg"
+        ]
+      },
+      {
+        name: "Nissan Rogue", 
+        img: [
+          "https://ucarecdn.com/44923545-e03b-469e-8bc9-522a8755f312/nissanrogue.webp",
+          "https://ucarecdn.com/23aa5788-3a7a-46b8-81b0-e40eb5d5597d/nissanrogueinterior.jpg"
+        ]
+      },
+      {
+        name: "Nissan Pathfinder",
+        img: [
+          "https://ucarecdn.com/38ed90eb-cb4a-4df5-b133-83f494f5e6a1/2023NissanPathfinder.webp",
+          "https://ucarecdn.com/54453da3-053e-4a0d-a685-3e3d6332ea84/2022NissanPathfinderinterior.jpg"
+        ]
+      }
+    ],
     img:`https://www.motortrend.com/uploads/2022/04/2023-Nissan-Pathfinder-Rock-Creek-22.jpg?fit=around%7C875:492.1875`
 
   },
@@ -153,6 +189,46 @@ export const collectionCars = [
         "Range Rover Defender",
         "Nissan Patrol",
       ],
+      cars: [
+        {
+          name: "BMW X5",
+          img: [
+            "https://ucarecdn.com/6d424141-38e4-48bc-b2ce-ff06045d9fbf/2021bmwx5.jpg",
+            "https://ucarecdn.com/9cdf494b-3e63-4cf7-9935-441a7da3bdf7/2020bmwx5int.jpg"
+          ]
+        },
+        {
+          name: "BMW X6",
+          img: [
+            "https://ucarecdn.com/c7f51df4-dbab-4b92-a5ff-13564681b142/BMW_X62023.jpg",
+            "https://ucarecdn.com/6431935b-9569-4c5b-908c-7d7c0da32d2c/bmwx6interior.jpg"
+          ]},
+        {
+          name: "Audi Q7",
+          img: [
+            "https://ucarecdn.com/766a720f-f292-43f4-8741-31ce21dbd29d/2023AudiQ7.webp",
+            "https://ucarecdn.com/e5272f6c-48b8-4367-8585-ccac315cf3ac/audiq7interior.jpg"
+          ]},
+        {
+          name: "Mercedes G Class",
+          img: [
+            "https://ucarecdn.com/1775572e-d9b6-4db1-987c-0d12b1a53258/mercedesgclass.webp",
+            "https://ucarecdn.com/925da57a-92de-4009-ad04-7d227cfcbc31/mercedesglclassinside.jpg"
+          ]},
+        {
+          name: "Mercedes CLE Class",
+          img: [
+            "https://ucarecdn.com/402b7afc-ca7d-4138-8dba-4e03d3ba16e5/mercedeseclass.jpg",
+            "https://ucarecdn.com/1ae17340-23a6-4d74-b4d0-dfe46d55f323/mercedeseclassinterior.jpg"
+      ]},
+        { name: "Chevrolet Tahoe", img: [`https://ucarecdn.com/c3c3b1cf-768c-4dbe-94a3-45a7dab6f658/2023ChevroletTahoe1.jpg`,`https://ucarecdn.com/07a60526-8191-48ae-9f81-a3761fe28ba8/chevrolettahoeinterior.jpg`] },
+        // { name: "Cadillac Escalade", img: [] },
+        { name: "GMC Yukon", img: [`https://ucarecdn.com/5a9a456d-ff5b-4329-a1de-4a9f2d589bb5/gmcyukon2023.jpg`,`https://ucarecdn.com/1c8f6252-3dc3-4918-8028-6099f25d41b8/gmcyukoninside.png`] },
+        { name: "Range Rover Sport", img: [`https://ucarecdn.com/8b4fc7bf-75ab-4052-a70d-59d44bdb189e/2024rangeroversportsv.jpg`,`https://ucarecdn.com/6edac9e8-3154-41e9-9423-1cbe1c7ed6d4/rangeroversportinside.jpg`] },
+        // { name: "Range Rover Vogue", img: [] },
+        { name: "Range Rover Defender", img: [`https://ucarecdn.com/22465f0c-c5a1-4d9e-90b1-297440bdf98d/rangeroverdefinder.webp`,`https://ucarecdn.com/f1d83785-b338-42c3-a400-d9d5205777b1/ranferoverinterior.jpg`] },
+        // { name: "Nissan Patrol", img: [] }
+      ],
       flip:true,
     img:`https://ucarecdn.com/22465f0c-c5a1-4d9e-90b1-297440bdf98d/rangeroverdefinder.webp`
 
@@ -168,6 +244,34 @@ export const collectionCars = [
         "BMW 735",
         "Jaguar XJ",
        
+      ],
+      cars: [
+        {
+          name: "Mercedes S Class",
+          img: [
+            "https://ucarecdn.com/7d5c8e5c-2f10-446b-a0db-042ee726c5ed/mercedessclass.jpg",
+            "https://ucarecdn.com/af41a99a-47ba-42eb-9f38-63b08122d443/mercedesinside.jpg"
+          ]
+        },
+        {
+          name: "Audi A8",
+          img: [
+            "https://ucarecdn.com/8d439b1a-c4a5-4eb4-99fc-f193b1753efc/audia8.webp",
+            "https://ucarecdn.com/20780102-535b-465b-9c12-5d919f9862c9/audia8inteior.jpg"
+          ]},
+        {
+          name: "BMW 735",
+          img: [
+            "https://ucarecdn.com/6a82b9df-c273-49d1-b1e3-a9ec81e5b014/bmw735.jpg",
+            "https://ucarecdn.com/a5915409-f0b6-4052-827e-96cbe332ed6e/bmw725interior.jpg"
+          ] },
+        {
+          name: "Jaguar XJ",
+          img: [
+            "https://ucarecdn.com/dd32124d-4da2-4cbc-ac39-ded121821e23/jaguarxj.jpg",
+            "https://ucarecdn.com/ae903156-bd16-4da4-aa05-fb5d0f35ce88/jaguarxjinterior.jpg"
+      ]}
+        
       ],
       flip:true,
     img:`https://assets-global.website-files.com/5df711f1f373c87eede86c3b/63dd6e862daed811c46ad80a_2023%20Audi%20S8%20Dealer%20Header%201440x650.jpg`
@@ -185,6 +289,36 @@ export const collectionCars = [
         "Mercedes E Class",
        
       ],
+      cars: [
+        {
+          name: "Audi A6",
+          img: [
+            "https://ucarecdn.com/d7f925d9-9dd1-43b6-9a43-7e33c924a33b/audia61.jpg",
+            "https://ucarecdn.com/5157a7b3-d0f0-4ad9-a619-5c920951e87e/audia6interior.jpg"
+          ]
+        },
+        {
+          name: "BMW 500",
+          img: [
+            "https://ucarecdn.com/21e7edea-b322-4f3c-8560-4a2ec0bf4e95/bmw500.jpg",
+            "https://ucarecdn.com/cf60a8aa-6adb-4b94-9b72-51353b41cbbf/bmw500interior.jpg"
+          ]}
+        ,
+        {
+          name: "Mercedes C Class",
+          img: [
+            "https://ucarecdn.com/42a6c2c5-1641-45ea-a6ba-da08911800cf/Addasubheading8.png",
+            "https://ucarecdn.com/2512cf27-7547-46f4-8e41-43e10cfb618e/mercedesbenzcclassinside.jpg"
+          ]}
+        ,
+        {
+          name: "Mercedes E Class",
+          img: [
+            "https://ucarecdn.com/402b7afc-ca7d-4138-8dba-4e03d3ba16e5/mercedeseclass.jpg",
+            "https://ucarecdn.com/1ae17340-23a6-4d74-b4d0-dfe46d55f323/mercedeseclassinterior.jpg"
+          ]}
+
+      ],
       flip:true,
     img:`https://ucarecdn.com/c7016a96-fe53-4df1-8fda-f181261b3c9f/bmw500.jpg`
 
@@ -197,9 +331,24 @@ export const collectionCars = [
     list: [
         " Hyundai H1",
         "Mercedes V Class",
-      
-       
       ],
+      cars: [
+        {
+          name: "Hyundai H1",
+          img: [
+            "https://ucarecdn.com/c20018b3-74ec-4dbf-a5c2-5d4700e4e48e/hyundaih1.jpg",
+            "https://ucarecdn.com/2ccdeb78-85fa-407a-b94a-34fd69f78a51/hyundaih1interior.jpg"
+          ]
+        },
+        {
+          name: "Mercedes V Class",
+          img: [
+            "https://ucarecdn.com/196f887d-d6ce-41ab-8c78-98c2d6a9bad4/mercedesvclass.jpg",
+            "https://ucarecdn.com/ecd5379b-4ba0-40c7-890a-2a3965734051/mercedesvclassinterior.webp"
+        ]  }
+        
+      ],
+    
     img:`https://ucarecdn.com/d4747151-56df-4d24-964a-1604d5773caf/mercedesvclass.jpg`
 
   }
@@ -210,10 +359,32 @@ export const collectionCars = [
     price: "150$ Per Day",
     position: 'left',
     list: [
-        "  Chevrolet Camaro",
+        "Chevrolet Camaro",
         "Mercedes E Class",`BMW 300`
-      
-       
+    
+      ],
+      cars: [
+        {
+          name: "Chevrolet Camaro",
+          img: [
+            "https://ucarecdn.com/dc316972-2c5d-4845-8efb-589290f0d0b4/chevroletcamaroconvertible.jpg",
+            "https://ucarecdn.com/e90517fc-d8a6-4951-bfec-bb99f1bb73c2/camaroinside.jpg"
+          ]
+        },
+        {
+          name: "Mercedes E Class",
+          img: [
+            "https://ucarecdn.com/81f8ddc4-357b-45e8-b89f-451e85c01d84/mercedeseclassconv.jpg",
+            "https://ucarecdn.com/e786ea12-bb8d-40bb-970b-8e0991da5039/mercedesclassconv.jpg"
+        ]  }
+        ,{
+          name: "BMW 300",
+          img: [
+            "https://ucarecdn.com/a96d4cc4-5b93-4665-9d80-86c86e5f6bb8/bmw300conv.webp",
+            "https://ucarecdn.com/ed235f18-1f3f-4f8c-8510-d85c699e3306/bmw300interior.jpg"
+        ]  }
+        
+        
       ],
     img:`https://vehicle-images.dealerinspire.com/f1f8-11000845/W1K1K5KB2PF196966/a2f6b7732fff62ce2ccf6f0b210fc26a.jpg`
 
@@ -257,28 +428,6 @@ export const collectionCars = [
     img:`https://ucarecdn.com/db79b3ac-bcf7-42da-b760-2f087c17f1f9/mercedesbenz_sclass_s400_w222__1694079125_5fc2ae8b_progressive.jpg`
 
   }
-  
-
- 
-  
-
-
- 
-
-  
-
-  
-  
-
-
-
-  
-
-
-
-
-
-
 
 ]
 
