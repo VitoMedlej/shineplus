@@ -46,11 +46,27 @@ const ProductCollection = ({sx,delay,Collectiontitle,selectedCars,setQuickView} 
             }}>
               {Collectiontitle}
             </Typography>
-            
+            <Box className='flex gap1 gap'>
+
             <Btn
+            
             onClick={()=>router.push('/')}>
                 View All
             </Btn>
+            <Btn
+            sx={{':hover':{color:'white'},color:'green'}}
+           >
+    <a className='flex center items-center ' style={{color:'green',textDecoration:'none',borderRadius:'2000px'}} href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} target='_blank' rel='noopener'>
+
+              CHAT NOW
+              <Box className='center flex align-center' sx={{width:'30px',ml:1}}>
+      <img src="https://www.7979.org.my/uploads/1/2/6/3/126376279/whatsapp-icon_1.png" alt="Whatsapp Icon" className="img" />
+      </Box>
+    </a>
+     
+            </Btn>
+            </Box>
+
             </Box>
             
             <Box

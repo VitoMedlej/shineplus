@@ -15,7 +15,9 @@ import useLanguage from '@/Hooks/useLanguage';
 const Preloader3 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState([
+        {img:`https://ucarecdn.com/c582441b-9ce1-459f-b4a6-b6c92a26da66/2103880.jpg`},
         {img : `https://ucarecdn.com/674fcd0e-3990-403d-84de-ef8f6b6351b9/peakpx2.jpg`},
+        {img:`https://ucarecdn.com/4af6db3a-3c96-45b7-b247-3a4971f2f8f8/1600x9002605155mercedeshdimageforwallpaper.jpg`},
         {img:`https://ucarecdn.com/4990a185-a2ea-43fb-ac9b-c8b7a00fe0d5/download.jfif`}
      ])
      const redir = () => {

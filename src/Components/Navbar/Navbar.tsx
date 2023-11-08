@@ -222,7 +222,7 @@ mobile
                             {text('English','Arabic')}
                         </Btn> */}
                         <IconButton
-                            onClick={() => setOpenModal(!openModal)}
+                            // onClick={() => setOpenModal(!openModal)}
                             sx={{
                             color: 'white'
                         }}>
@@ -230,8 +230,10 @@ mobile
                                 <AiOutlineCar color='white'/>
                           
                         </IconButton>
+                        <a style={{textDecoration:'none',borderRadius:'2000px',background:'transparent'}} href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} target='_blank' rel='noopener'>
+
                         <IconButton
-                        onClick={() => router.push('/rental/collection')}
+
                             sx={{
                             color: 'white'
                         }}>
@@ -240,6 +242,7 @@ mobile
                             {/* </Badge> */}
                           
                             </IconButton>
+                            </a>
 
 
 

@@ -42,7 +42,7 @@ const Footer = () => (
           <ul className=' ul-white'>
             <li className='link-title'>Site links</li>
             <li><Link  href="/">Home</Link></li>
-            <li><Link href="/rental/collection">All Products</Link></li> 
+            {/* <li><Link href="/rental/collection">All Products</Link></li>  */}
             <li><Link href="/terms-and-conditions">Terms & Conditions</Link></li>
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
             <li><Link href="https://wa.me/+96170444022">Contact Us</Link></li>

@@ -13,7 +13,7 @@ import {GrFormClose} from 'react-icons/gr'
 // import NestedAccordion from './NestedAccordion';
 
 
-const cates = [
+const cars = [
   'Small Cars',
   'Business Cars',
   'Luxury Business Cars',
@@ -76,7 +76,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
               <ListItemButton sx={{py:1.5}} >
             
                   <Typography sx={{fontWeight:600}}>
-              All Products
+              All Cars
             </Typography>
             </ListItemButton>
   
@@ -97,23 +97,12 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
 
           </ListItem>
           
-    {
-      [
-        `Lions Mane`,
-      `MACA`,
-      `Bacopa Monnieri `,
-      `Passion Flower `,
-      `GABA`,
-      `Taurine`,
-      `L arginine`,
-      `L Lysine`,
-'Cordyceps','Tongkat-ali','Ashwagandha'
-      ]
-.map(i=>{
+    {/* {
+      !cars && cars.map(i=>{
         return   <ListItem key={i}
         sx={{fontWeight:600}}
 
-        onClick={()=>{router.push(`/${encodeURIComponent(i.toLocaleLowerCase())}/products`); toggleDrawer(false)}}
+        onClick={()=>{router.push(`/rental/${encodeURIComponent(i.toLocaleLowerCase())}`); toggleDrawer(false)}}
          disablePadding>
             <ListItemButton sx={{py:1}} >
           
@@ -125,7 +114,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
 
         </ListItem>
       })
-    }
+    } */}
                   {/* <Accordion sx={{border:'none',boxShadow:'none',}}>
             
                   <AccordionSummary

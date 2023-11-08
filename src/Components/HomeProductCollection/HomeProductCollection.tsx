@@ -399,8 +399,12 @@ export const collectionCars = [
        `Bus 32 Packs`,
        `Bus 36 Packs`,
        `Bus 50 Packs`,
-      
-       
+      ],
+      cars : [
+        {
+          name: 'Pullman 28-50 seaters',
+          img: [`https://ucarecdn.com/34ddcb73-a1df-4521-beee-10b75a054709/3.png`]
+        }
       ],
     img:`https://ucarecdn.com/34ddcb73-a1df-4521-beee-10b75a054709/3.png`
 
@@ -419,10 +423,19 @@ export const collectionCars = [
       `Mercedes Convertible`,
       `Classic Cars`,
       `Limousine`,
-      
-      `Wedding Planner`
-      
-       
+      `Wedding Planner` ],
+      cars: [
+   
+        {
+          name: "Mercedes S Class",
+          img: ["https://ucarecdn.com/f059f46b-2264-4367-9bef-7c72a950acf0/mercedesbenz_sclass_s400_w222__1694079125_5fc2ae8b_progressive.jpg"]
+        },
+        {
+          name: "Jaguar XF",
+          img: ["https://ucarecdn.com/7b4d38bb-9b8c-48d1-b4fc-20735b69c465/jaguar_Xjl_Wedding_Cars_Hyderabad.jpg"]
+        },
+        { name: "Classic Cars", img: [`https://ucarecdn.com/ca5cc066-9e07-4b52-bd0b-8681421ac523/2940139855_30d639977f_o.jpg`] },
+        { name: "Bentley Continental", img: ['https://ucarecdn.com/50f818c2-85a7-4a5c-b47b-72d17b7f8a29/puncarscombentleyluxuryweddingcarforrentinpunjabchandigarh4.jpg'] },
       ],
       flip:true,
     img:`https://ucarecdn.com/db79b3ac-bcf7-42da-b760-2f087c17f1f9/mercedesbenz_sclass_s400_w222__1694079125_5fc2ae8b_progressive.jpg`
@@ -457,6 +470,7 @@ onClick={()=>router.push('/rental/collection')}
 >
     View All
 </Btn>
+
 </Box>
 
               <Box sx={{mb:2,mt:4}} className='flex wrap gap1 justify-center'>
