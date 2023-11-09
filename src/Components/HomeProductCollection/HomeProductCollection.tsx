@@ -180,7 +180,7 @@ export const collectionCars = [
         "BMW X6",
         "Audi Q7",
         "Mercedes G Class",
-        "Mercedes CLE Class",
+        "Mercedes GLE Sport",
         "Chevrolet Tahoe",
         "Cadillac Escalade",
         "GMC Yukon",
@@ -194,14 +194,14 @@ export const collectionCars = [
           name: "BMW X5",
           img: [
             "https://ucarecdn.com/6d424141-38e4-48bc-b2ce-ff06045d9fbf/2021bmwx5.jpg",
-            "https://ucarecdn.com/9cdf494b-3e63-4cf7-9935-441a7da3bdf7/2020bmwx5int.jpg"
+            "https://hips.hearstapps.com/hmg-prod/images/2024-bmw-x5-112-1675791496.jpg"
           ]
         },
         {
           name: "BMW X6",
           img: [
             "https://ucarecdn.com/c7f51df4-dbab-4b92-a5ff-13564681b142/BMW_X62023.jpg",
-            "https://ucarecdn.com/6431935b-9569-4c5b-908c-7d7c0da32d2c/bmwx6interior.jpg"
+            "https://hips.hearstapps.com/hmg-prod/images/2024-bmw-x6-120-1675791924.jpg"
           ]},
         {
           name: "Audi Q7",
@@ -216,10 +216,10 @@ export const collectionCars = [
             "https://ucarecdn.com/925da57a-92de-4009-ad04-7d227cfcbc31/mercedesglclassinside.jpg"
           ]},
         {
-          name: "Mercedes CLE Class",
+          name: "Mercedes GLE Sport",
           img: [
-            "https://ucarecdn.com/402b7afc-ca7d-4138-8dba-4e03d3ba16e5/mercedeseclass.jpg",
-            "https://ucarecdn.com/1ae17340-23a6-4d74-b4d0-dfe46d55f323/mercedeseclassinterior.jpg"
+            "https://cdn.jdpower.com/JDPA_2020%20Mercedes-Benz%20GLE%20450%20Lunar%20Blue%20AMG%20Night%20Package%20Front%20View.jpg",
+            "https://www.mercedes-benz.com.mt/passengercars/mercedes-benz-cars/models/gle/suv-v167/design/lines/_jcr_content/swipeableteaserbox/par/swipeableteaser_131671841/asset.MQ6.12.20211021195617.jpeg"
       ]},
         { name: "Chevrolet Tahoe", img: [`https://ucarecdn.com/c3c3b1cf-768c-4dbe-94a3-45a7dab6f658/2023ChevroletTahoe1.jpg`,`https://ucarecdn.com/07a60526-8191-48ae-9f81-a3761fe28ba8/chevrolettahoeinterior.jpg`] },
         // { name: "Cadillac Escalade", img: [] },
