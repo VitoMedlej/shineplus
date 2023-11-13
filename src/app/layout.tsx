@@ -6,6 +6,7 @@ import Sidebar from '@/Components/Sidebar/Sidebar'
 import ScrollToTop from '@/Components/ScrollToTop/ScrollToTop'
 import QuickCart from '@/Components/Shared/QuickCart/QuickCart'
 import ContextWrapper from '@/context/Contexts'
+import ContactSection from '@/Components/ContactSection/ContactSection'
 
 export const metadata = {
     title: 'Al halabi  - Shop Natural Meds in Lebanon',
@@ -37,8 +38,9 @@ export default function RootLayout({children} : {
 
                      {children}
                     </main>
+                    <ContactSection/>
+                    <Footer/>
                 </ContextWrapper>
-                <Footer/>
             </body>
         </html>
     )

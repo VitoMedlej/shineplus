@@ -44,10 +44,10 @@ let style2 = {
   outline: 'none',
 }
 
-const Btn = ({v2,disabled,onClick,className,children,sx}:{className?:string,disabled?:boolean,onClick?:()=>any,sx?:any,v2?:boolean,children?:any}) => {
+const Btn = ({v2,disabled,onClick,className,children,sx,submit}:{submit?:boolean,className?:string,disabled?:boolean,onClick?:()=>any,sx?:any,v2?:boolean,children?:any}) => {
   return (
     <Button
-   
+    type={submit ? 'submit' : 'button'}
     className={`trans ${className ? className : ''}`}
     disabled={disabled || false}
     onClick={onClick &&onClick}
