@@ -295,7 +295,7 @@ onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCa
       </Box>        
       // */}
 
-<Testimonials/>
+{/* <Testimonials/> */}
 <Perks></Perks>
         {/* <ContactSection/> */}
   </Box>

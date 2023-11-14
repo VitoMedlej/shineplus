@@ -4,7 +4,8 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import Btn from '@/Components/Btn/Btn'
 import {CiLocationOn} from 'react-icons/ci'
-
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 
 
@@ -17,27 +18,23 @@ const Index = () => {
   const [email,
       setEmail] = useState('')
       const [Phone, setPhone] = useState('')
-      const [date1, setDate1] = useState('')
-      const [date2, setDate2] = useState('')
 const [FullName, setFullName] = useState('')
 const [Message, setMessage] = useState('')
+const [startDate, setStartDate] = useState(new Date());
+const [endDate, setEndDate] = useState(new Date());
   const sendMessage = async(e : any) => {
 
     e.preventDefault();
     if (!form.current) 
-        return;
-        let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if (!email || !email.match(regexEmail)) {
-            setStatus(400)
-            return;
-        }
-        if (!FullName || !Phone || !Message ) {
-            setStatus(400)
-            return;
-        }
+    return;
+  
+  if (!email || !FullName || !Phone || !Message ) {
+    setStatus(400)
+    return;
+  }
    
 
-    const req = await emailjs.sendForm(`service_r23wxbm`, 'template_8qq3c4m', form.current, 'gpXYzpkJd_t71NH1j')
+    const req = await emailjs.sendForm(`service_r23wxbmNOT`, 'template_8qq3c4mNOT', form.current, 'gpXYzpkJd_t71NH1j')
     const res = await req
     setStatus(res ? res?.status : 400)
     if (res?.status && form?.current) {
@@ -61,20 +58,34 @@ const [Message, setMessage] = useState('')
         </Box>
       
    
-        <Grid item xs={12} sm={6} md={5} >
+        <Grid sx={{mb:{xs:5,sm:0}}} item xs={12} sm={6} md={5} >
     <Container >
         <Typography component='h1' className='clr2' sx={{fontSize:{xs:'1.75em'},my:3,fontWeight:'800'}}>
         Contact Information:
         </Typography>
   
-  <a className='flex auto center items-center align-center gap gap1 black' href='' target='_blank' rel='noopener'>
+  <a className='flex auto  items-center align-center gap gap1 black' href='' target='_blank' rel='noopener'>
     <CiLocationOn/>
         <Typography sx={{fontSize:{xs:'1.15em'},fontWeight:'500'}}>
                     
-                    ST JOSEPH HOSPITAL STREET , DORA
+        Alley/ bchara el khoury street
         </Typography>
   </a>
-       
+  <a className='flex auto  items-center align-center gap gap1 black' href='' target='_blank' rel='noopener'>
+    <CiLocationOn/>
+        <Typography sx={{my:2,fontSize:{xs:'1.15em'},fontWeight:'500'}}>
+                    
+        Beirut / bouchrieh .st Joseph street
+        </Typography>
+  </a>
+  <a className='flex auto  items-center align-center gap gap1 black' href='' target='_blank' rel='noopener'>
+    <CiLocationOn/>
+        <Typography sx={{fontSize:{xs:'1.15em'},fontWeight:'500'}}>
+                    
+        Aabadieh / hotel Golden Lili
+        </Typography>
+  </a>
+
     </Container>
         </Grid> 
 
@@ -94,6 +105,8 @@ const [Message, setMessage] = useState('')
 
               onChange={(e)=>setFullName(e?.target?.value)} 
               name={'FullName'} sx={{width:'99%',py:1}} variant='outlined' placeholder='First Name'/>
+           <DatePicker selected={startDate} onChange={(date:Date) => setStartDate(date)} />
+           <DatePicker selected={endDate} onChange={(date:Date) => setEndDate(date)} />
             {/* <DatePicker
   label="Controlled picker"
   value={date1}
@@ -116,7 +129,7 @@ const [Message, setMessage] = useState('')
               value={Message}
               onChange={(e)=>setMessage(e?.target?.value)} 
               
-              name={'Message'} multiline={true} variant='outlined' rows={4}  sx={{width:'99%',py:2}} placeholder='Message'/>
+              name={'Message'} multiline={true} variant='outlined' rows={4}  sx={{width:'99%',py:2}} placeholder='Any Notes'/>
               <Btn
 submit
    
@@ -130,7 +143,7 @@ submit
        
     </Grid>
 
-<Comp/>
+
    
     </>
   )
