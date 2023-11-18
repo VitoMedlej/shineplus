@@ -105,7 +105,7 @@ const [endDate, setEndDate] = useState(new Date());
               value={FullName}
 
               onChange={(e)=>setFullName(e?.target?.value)} 
-              name={'FullName'} sx={{width:'99%',py:1}} variant='outlined' placeholder='First Name'/>
+              name={'FullName'} sx={{width:'99%',py:1}} variant='outlined' placeholder='Full Name'/>
            <DatePicker name='StartDate' selected={startDate} onChange={(date:Date) => setStartDate(date)} />
            <DatePicker  name='EndDate' selected={endDate} onChange={(date:Date) => setEndDate(date)} />
             {/* <DatePicker
