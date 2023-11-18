@@ -34,8 +34,9 @@ const [endDate, setEndDate] = useState(new Date());
   }
    
 
-    const req = await emailjs.sendForm(`service_r23wxbmNOT`, 'template_8qq3c4mNOT', form.current, 'gpXYzpkJd_t71NH1j')
+    const req = await emailjs.sendForm(`service_i9h8mw5`, 'template_hml9w5k', form.current, 'YUsR8yA3kMr0Gmz1j')
     const res = await req
+    console.log('res: ', res);
     setStatus(res ? res?.status : 400)
     if (res?.status && form?.current) {
       form?.current?.reset()
@@ -105,8 +106,8 @@ const [endDate, setEndDate] = useState(new Date());
 
               onChange={(e)=>setFullName(e?.target?.value)} 
               name={'FullName'} sx={{width:'99%',py:1}} variant='outlined' placeholder='First Name'/>
-           <DatePicker selected={startDate} onChange={(date:Date) => setStartDate(date)} />
-           <DatePicker selected={endDate} onChange={(date:Date) => setEndDate(date)} />
+           <DatePicker name='StartDate' selected={startDate} onChange={(date:Date) => setStartDate(date)} />
+           <DatePicker  name='EndDate' selected={endDate} onChange={(date:Date) => setEndDate(date)} />
             {/* <DatePicker
   label="Controlled picker"
   value={date1}
@@ -119,10 +120,10 @@ const [endDate, setEndDate] = useState(new Date());
   onChange={(newValue) => setDate2(`${newValue}`)}
 /> */}
              
-              <TextField name={'CarName'} onChange={(e)=>setEmail(e?.target?.value)} variant='outlined' sx={{width:'99%',py:1}} type='text' placeholder='Car Name'/>
+              <TextField name={'CarName'} onChange={(e)=>setEmail(e?.target?.value)} variant='outlined' sx={{width:'99%',py:1}} type='text' placeholder='Car Type'/>
               <TextField name={'Phone'} 
               value={Phone}
-
+            type='number'
               onChange={(e)=>setPhone(e?.target?.value)} 
               variant='outlined' sx={{width:'99%',py:1,}} placeholder='Phone Number'/>
               <TextField 
