@@ -11,7 +11,7 @@ import { useEffect, useState} from 'react';
 // import { CartContext, DrawerContext } from '../../../pages/_app'; import
 import SearchModal from './SearchModal';
 import Link from 'next/link';
-import { Divider, Typography} from '@mui/material';
+import { Container, Divider, Typography} from '@mui/material';
 // import { loadState } from '../../Utils/LocalstorageFn';
 import {useRouter} from 'next/navigation';
 // import {AiOutlinePhone, AiOutlineSearch, AiOutlineMenu} from 'react-icons/ai'
@@ -20,6 +20,7 @@ import {AiOutlineCar} from 'react-icons/ai'
 
 import NavButtom from './NavButtom';
 import {  useDrawerContext } from '@/context/Contexts';
+import Btn from '../Btn/Btn';
 
 
 
@@ -70,20 +71,50 @@ export default function Navbar() {
                 width:'100%',
             margin: '0 auto',
         }}>
-               
+                  <Box className='flex items-center row'
+                   sx={{justifyContent:'flex-end',background:'white',py:.3}}>
+<Container className='flex ' sx={{margin:0,justifyContent:'space-between',maxWidth:{xs:'100%',sm:'500px'}}}>
+
+            <Box className='flex row items-center'>
+                <Box sx={{pr:.1,height:'20px'}}>
+
+            <img src="https://www.svgrepo.com/show/533285/phone.svg" alt="" className="img" />
+                </Box>
+            <Typography sx={{color:'black',fontSize:'.70em',textAlign:'end',fontWeight:600}}>
+            +961 3 545 717
+            </Typography>
+            </Box>
+
+            <Box className='flex row items-center'>
+                <Box sx={{pr:.1,height:'20px'}}>
+
+            <img src="https://www.svgrepo.com/show/522682/time.svg" alt="" className="img" />
+                </Box>
+            <Typography sx={{color:'black',fontSize:'.70em',textAlign:'end',fontWeight:600}}>
+            Mon - Fri: 9:00 - 12:00 
+            </Typography>
+            </Box>
+
+            <Btn sx={{display:{xs:'none',sm:'flex'},py:.2}}>
+                Book Now
+            </Btn>
+</Container>
+
+            </Box>
             <Toolbar
      id='navy3'
 
-    className='center relative  flex  w100  auto'
+    className='center bg relative  flex  w100  auto'
 
                 sx={{
                 
-                    background:'black',
+                    // background:'black',
                     maxWidth:'xl',
                 px:'0 !important',
                 
                 flexWrap: 'wrap'
             }}> 
+         
                   <Link className='flex center  aling-center items-center '  href='/' color='inherit'>
 
 <Box className='flex'
@@ -96,7 +127,7 @@ export default function Navbar() {
 }}>
     <img
         className='img contain'
-        src={`https://ucarecdn.com/1520c0d1-bd9e-4be7-9f74-255a3e5bc352/Blacklogo.png`}
+        src={`https://ucarecdn.com/5262b9e9-1a00-4d46-8848-c02f68e4c14b/logo.jpg`}
         alt="Al halabi  logo"/>
 </Box>
 </Link>
@@ -225,29 +256,12 @@ mobile
                         }}>
                             {text('English','Arabic')}
                         </Btn> */}
-                        <IconButton
-                            // onClick={() => setOpenModal(!openModal)}
-                            sx={{
-                            color: 'white'
-                        }}>
+                    
+                    
 
-                                <AiOutlineCar color='white'/>
-                          
-                        </IconButton>
-                        <a style={{textDecoration:'none',borderRadius:'2000px',background:'transparent'}} href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} target='_blank' rel='noopener'>
-
-                        <IconButton
-
-                            sx={{
-                            color: 'white'
-                        }}>
-                            {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
-                                <AiOutlinePhone color='white'/>
-                            {/* </Badge> */}
-                          
-                            </IconButton>
-                            </a>
-
+                            <Btn>
+                                Contact Us
+                            </Btn>
 
 
                             {/* <IconButton

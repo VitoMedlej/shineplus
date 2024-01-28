@@ -43,261 +43,148 @@ PreLoader = ({data,resImages}:any) => {
   return (
     <Box >
       <MainCarousel resImages={resImages}/>
-      <HomeProductCollection  products={data?.featuredProducts}/>
+    
+    <Container sx={{maxWidth:'lg'}}>
+    <Typography className='clr2' sx={{fontWeight:700,fontSize:'1.15em',fontStyle:'italic',pt:{xs:8,sm:10},pb:1,maxWidth:'800px',}}>
+        Our Services
+      </Typography>
+      <Typography sx={{fontWeight:900,fontSize:'2.5em',maxWidth:'800px',fontStyle:'italic',textTransform:'uppercase'}}>
+      WE OFFER A WIDE RANGE OF CAR SERVICES
+      </Typography>
+      <Box sx={{mt:6}} className='flex wrap justify-around'>
+          {
+            [
+              {
+                img:`https://th.bing.com/th/id/OIP.lliqZ00MjK10WAFmjC5JagHaE7?rs=1&pid=ImgDetMain`,
+                title:`Car Wash`
+              },
+              {
+                img: `https://th.bing.com/th/id/OIP.H8AKbby4ceYx6Kc4eZAWRgHaE8?rs=1&pid=ImgDetMain`,
+                title:`Exterior Treatments`
+              },
+              {
+                title:'Interior Detailing',
+                img:'https://th.bing.com/th/id/OIP.53dYrQhPXt5aeuPMQlRn2QHaE8?rs=1&pid=ImgDetMain'
+              }
+              ,
+              {
+                title:`Additional Services`,
+                img:`https://th.bing.com/th/id/OIP.RPOCIvraZNZN1flU2LVpMgHaE8?rs=1&pid=ImgDetMain`
+              }
+            ].map(i=>{
+              return <Box className='relative cursor pointer'
+              onClick={()=>router.push(`/services/${encodeURIComponent(i?.title.toLowerCase())}`)}
+              key={i.title} sx={{my:1,minWidth:{sm:'auto',md:'250px'},height:'300px',width:{xs:'49%',sm:'48%',md:'24%'}}}>
+                <Box sx={{height:'100%'}}>
 
-    <Grid  sx={{background:'#f4f8fd',width:'100%',py:8}} container>
-    {/* <Grid  maxWidth='lg' item xs={12} md={6}>
-      <Box sx={{height:'500px',maxWidth:'450px'}} className='auto'>
-        <img src="https://ucarecdn.com/c9a20ac1-a815-4a27-ac99-9f896cc6f0bd/doctors.jpg" alt="" className="img" />
+                 <img src={i.img} alt="" className="img" />
+                </Box>
+                <Box sx={{bottom:'15%',color:'white',left:'10%',fontWeight:'700',textTransform:'uppercase',fontSize:'1.5em',textShadow:'1px 1px 3px #0000002e'}} className="absolute">
+                  {i.title}
+                </Box>
+              </Box>
+            })
+          }
       </Box>
-    </Grid>
-    <Grid maxWidth='lg' item xs={12} md={6}>
-    <Container  className='wrap col   auto flex' sx={{alignItems:'left',px:{sm:1},pt:{xs:2,sm:4},display:'flex'}}>
-        <Typography sx={{fontWeight:400}} className='color'>
-        {text('ABOUT US', 'من نحن')}
-
-        </Typography>
-        <Typography sx={{width:'100%',maxWidth:'500px',fontSize:{xs:'2em',sm:'3em'},fontWeight:600}} className='color2'>
-        {text('Welcome to True Nature Blend', 'مرحبًا في ترو ناتشور بليند')}
-
-        </Typography>
-        <Typography sx={{width:'100%',maxWidth:'500px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
-        {text('At Al halabi , we’re passionate about health and wellness. We believe in the power of nature, and that’s why we’ve created a range of natural supplements to help you live your best life. From ashwagandha to tongkat ali, we’ve got everything you need to feel your best.', 'في ترو ناشور بليند، نحن ملتزمون بالصحة والعافية. نحن نؤمن بقوة الطبيعة، وهذا هو السبب في أننا قمنا بإنشاء مجموعة من المكملات الطبيعية لمساعدتك على عيش حياتك بأفضل طريقة. من الأشواغاندا إلى تونجكات علي، لدينا كل ما تحتاجه لتشعر بأفضل حال.')}
-
-        </Typography>
-        <Btn 
-        onClick={()=>router.push('/about')}
-        
-        v2 className='color' sx={{width:'100px',color:'black',mt:2,px:0}}>
-        {text('Learn More', 'تعرف أكثر')}
-
-        </Btn>
     </Container>
 
-    </Grid> */}
-    <Grid  maxWidth='lg' item xs={12} sx={{mt:{xs:8,sm:12}}}>
-      <Typography sx={{fontSize:{xs:'2em',sm:'3em'},fontWeight:600}} className='center text-center auto color'>
-      {text('Why Choose Us?', 'لماذا تختار ترو ناشور بليند؟')}
 
-      </Typography>
-      <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
-      {text('High-quality car rental services in Lebanon.', 'مكملاتنا مصنوعة فقط من أرقى المكونات الطبيعية، تم اختيارها بعناية بسبب نقاوتها وفعاليتها. منتجاتنا خالية من المواد الكيميائية الضارة.')}
+        <Grid sx={{py:16,maxWidth:'lg'}} className='auto' container>
+            <Grid item sm={12} md={6}>
+            <Container>
 
-        </Typography>
-    </Grid>
-    <Grid  xs={12}  sx={{mt:4}}
-    >
-      <Container sx={{maxWidth:'lg'}} className='flex wrap row justify-between'>
+            <Typography 
+                                
+                                sx={{fontSize:{xs:'1.55em',sm:'2.1em',md:'2.65em',lg:'2.5em'},fontWeight:'900'}}>
+                Join Our Maintenance
+                  Program Join Today
+                </Typography>
+                <Typography 
+                                className=''
+                                sx={{fontSize:{xs:'.85em',sm:'.87em'},mt:1,maxWidth:'600px'}}>
+                We are pleased to offer our esteemed clients an opportunity to join our premium maintenance program. Our program is designed to cater to your individual needs with a choice of weekly, bi-weekly, or monthly plans.
+                </Typography>
+                <Btn
+                             
+                                
+                                className='bg white borderColor ' sx={{mt:3,mb:{xs:3,sm:0}}}>
+                               VIEW ALL CARS
 
-      {textsArray.map(i=>{
-        return <Box sx={{borderBottom:'1px solid white',width:{xs:'98%',sm:'200px',md:'48%'},maxWidth:'500px',mt:2.5}} key={i.id}>
-          {/* <Typography className='color3'>
-            .0{i.id}
-          </Typography> */}
-          <Typography className='color2' sx={{fontSize:'1.4em',fontWeight:500}}>
-            {i.title}
-          </Typography>
-          <Typography sx={{color:'#4d555e',fontSize:'.8em',pb:.65,maxWidth:'350px'}}>
-            {i.desc}
-          </Typography>
-        </Box>
-      })}
-      </Container>
+                                </Btn>
+                                </Container>
 
-    </Grid>
-    </Grid>
-    {/* <Box className='flex auto wrap ' sx={{justifyContent:'space-between',width:'100%',maxWidth:'xl'}}>
-      {
-        resImages?.categoryImage && resImages?.categoryImage.map((img:any)=>{
-          return <Box className='cursor' onClick={()=>router.push('/rental/collection')} key={img?.img} sx={{minWidth:'200px',my:1,width:{xs:'99%',sm:'49%',md:'48%'}}}>
-            <img src={img?.img} alt="Category Image Shop Now" className="img" />
+            </Grid>
+            <Grid item sm={12} md={6}>
+              <Box>
+                <img src="https://ucarecdn.com/3850c81c-5402-4bc0-9513-eeee979f3c3e/img1.PNG" alt="" className="img" />
+              </Box>
+            </Grid>
+        </Grid>
+   
+   
+          <Box className='relative' sx={{height:{xs:'900px',sm:'800px'}}}>
+          <Box sx={{pointerEvents:'none',top:0,right:0,width:'100%',zIndex:1123,height:'100%',background:'black',opacity:.65}} className="absolute">
+
+</Box>
+            <Box sx={{height:{xs:'900px',sm:'800px'}}}>
+              <img src="https://th.bing.com/th/id/R.a255b20553a97dd7b0bef0b05d8a1c62?rik=drpYYpUzkaBFUg&riu=http%3a%2f%2fwww.hdwallpaperslife.com%2fwp-content%2fuploads%2f2019%2f05%2fbmw_m5.jpg&ehk=oceHuCqD1GxxA1wWsDZI2o9u97DbiNOF5KXh1OBTa6Y%3d&risl=&pid=ImgRaw&r=0" alt="" className="img" />
+            </Box>
+
+
+            <Box 
+                            className='auto center text-center'
+                            sx={{
+                              maxWidth: '95%',
+    width: 'max-content',
+                                top:'5%',
+                                right:'50%',
+                                // px:{xs:4,sm:5,md:6},
+                                transform:'translateX(50%)',
+                                zIndex:123456,
+                                position:'absolute'}}>
+                                  <Typography sx={{fontSize:'2em',pt:1,textTransform:'uppercase',fontWeight:900,color:'white'}}>
+                                  a complete service experience
+                                  </Typography>
+
+                                  <Box sx={{mt:4,px:4,py:4,borderRadius:'4px',border:'1px solid white'}}>
+                                  <Typography className='clr2' sx={{pb:1,fontSize:'1.8em',textTransform:'uppercase',fontWeight:600,color:'white'}}>
+                                  Full Treatment Package:
+                                  </Typography>
+                                  <Typography sx={{py:2,fontSize:'1.2em',whiteSpace:'pre-wrap',pt:1,textTransform:'uppercase',fontWeight:700,color:'white'}}>
+                                  {`Compact: $200
+Sedan: $225
+SUV: $250`}
+                                    </Typography>
+                                  <Typography sx={{color:'white',whiteSpace:'pre-wrap'}}>
+                              {`  ✓ Car Wash
+✓ Engine Bay Treatment
+✓ Headlights Restoration
+✓ Full Interior Detailing
+✓ Paint Correction with Ceramic Protection (1 Year Warranty)
+✓ Rain Repellent Full Windows
+✓ Door Edge Guard
+✓ AC Bacteria Treatment (One Shot and Foam)`}
+                                  </Typography>
+                                  <Btn className='' sx={{mt:'1em',mx:'auto'}}>
+                                    BOOK NOW
+                                  </Btn>
+                                  </Box>
+                                </Box>
           </Box>
-        })
-      }
-    </Box> */}
-
-     {/* <Box
-                className=' text-center auto center box'
-     
-     sx={{mx:1,width:'100%'}}> */}
-{/* 
-        
-         <Typography
-                className='sectionTitle text-center auto center box'
-                sx={{
-                  py:'.15em',
-                  // pt:9,
-                  display:'flex',
-                fontSize: {
-                    xs: '1.2em',
-                    sm: '1.4em'
-                },
-                flex:1,
-                fontWeight: '300'
-            }}>
-               Explore Categories
-            </Typography>
-          */}
-
-            {/* <Box className='wrap  space-evenly' sx={{width:'100%',my:3,display:{xs:'flex'}}}> */}
-
-        {/* {cates.map((i:any)=>{
-            return <Box
-
-            onClick={()=>router.push(`${i?.category.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
-            key={i?.img} className='cursor'
-             sx={{borderRadius:'50%',height:{xs:'48vw',sm:'24vw',md:'24vw',lg:'15vw'},
-             my:2,width:{xs:'48vw',sm:'24vw',md:'24vw',lg:'15vw'}}}>
-                    <img src={i?.img} alt={`${i?.category ,'image'}`} style={{borderRadius:'50%'}} className="img" />
-                    <Typography sx={{fontWeight:'500',fontSize:'.65em',textAlign: 'center',px:1}}>
-             {i?.category}
-            </Typography>
-            </Box>
-
-        })} */}
-
-{/* {resImages?.first && <Box
-
-onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
- className='cursor'
- sx={{borderRadius:'50%',height:{xs:'48vw',sm:'24vw',md:'24vw',lg:'15vw'},
- my:2,width:{xs:'48vw',sm:'24vw',md:'24vw',lg:'15vw'}}}>
-        <img src={resImages?.first} alt={`Circut Machines Images image`} style={{borderRadius:'2%'}} className="img" />
-        <Typography sx={{fontWeight:'500',fontSize:'.65em',textAlign: 'center',px:1}}>
-        Circut Machines
-</Typography>
-</Box>}
 
 
-{resImages?.second && <Box
-  onClick={() => router.push(`${'customizable-blanks'.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
-  className='cursor'
-  sx={{ borderRadius: '2%', height: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' }, my: 2, width: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' } }}>
-  <img src={`${resImages?.second}`} alt={`Customizable Blanks Images image`} style={{ borderRadius: '2%' }} className="img" />
-  <Typography sx={{ fontWeight: '500', fontSize: '.65em', textAlign: 'center', px: 1 }}>
-    Customizable Blanks
-  </Typography>
-</Box>}
-{resImages?.third && <Box
-  onClick={() => router.push(`${'hot-offers'.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
-  className='cursor'
-  sx={{ borderRadius: '2%', height: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' }, my: 2, width: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' } }}>
-  <img src={resImages?.third} alt={`Hot Offers Images image`} style={{ borderRadius: '2%' }} className="img" />
-  <Typography sx={{ fontWeight: '500', fontSize: '.65em', textAlign: 'center', px: 1 }}>
-    Hot Offers
-  </Typography>
-</Box>}
-{resImages?.fourth && <Box
-  onClick={() => router.push(`${'new-arrivals'.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
-  className='cursor'
-  sx={{ borderRadius: '2%', height: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' }, my: 2, width: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' } }}>
-  <img src={resImages?.fourth} alt={`New Arrivals Images image`} style={{ borderRadius: '2%' }} className="img" />
-  <Typography sx={{ fontWeight: '500', fontSize: '.65em', textAlign: 'center', px: 1 }}>
-    New Arrivals
-  </Typography>
-</Box>}
-{resImages?.fifth && <Box
-  onClick={() => router.push(`${'materials'.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
-  className='cursor'
-  sx={{ borderRadius: '2%', height: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' }, my: 2, width: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' } }}>
-  <img src={resImages?.fifth} alt={`Materials Images image`} style={{ borderRadius: '2%' }} className="img" />
-  <Typography sx={{ fontWeight: '500', fontSize: '.65em', textAlign: 'center', px: 1 }}>
-    Materials
-  </Typography>
-</Box>} */}
+
+                              <Container sx={{maxWidth:'lg'}}>
+                                    {
+                                      [].map(i=>{
+                                        return <Box sx={{height:{xs:'48%',sm:'32%'},width:{xs:'48%',sm:'32%'}}}>
+                                              <img src="" alt="" className="img" />
+                                        </Box>
+                                      })
+                                    }
+                              </Container>
 
 
-            {/* </Box> */}
-
-     {/* </Box> */}
-
-      <Box/>
-    
-
-        {/* <Container sx={{pt:12,justifyContent:'space-between'}} className='flex row wrap space-between items-between' maxWidth='lg'>
-      <Box className='relative flex center items-center ' sx={{mb:2, width:{xs:'100%',sm:'49%'},height:{xs:'350px',sm:'350px',md:'450px',lg:'45vw'}}}>
-                  <img src="https://ucarecdn.com/4fc6fdc2-a720-40dd-8469-80966a92a759/purplemushroom.webp" alt="" className="img" />
-                  <Box  className="absolute flex center auto items-center text-center col ">
-                    <Typography className='center text-center' sx={{fontSize:'3em',textShadow:' #000000c',color:'white'}}>
-                    {text('Medicinal Mushroom', 'الفطر الطبي')}
-
-                    </Typography>
-                    <Btn
-        onClick={()=>router.push('/rental/collection')}
-                    
-                    sx={{border:'none',mx:'auto'}}>
-                    {text('SHOP NOW', 'تسوق الآن')}
-
-                    </Btn>
-                  </Box>
-            </Box>
-      <Box className='relative flex center items-center ' sx={{mb:2, width:{xs:'100%',sm:'49%'},height:{xs:'350px',sm:'350px',md:'450px',lg:'45vw'}}}>
-                  <img src="https://ucarecdn.com/7e5db5d1-ab25-456e-b7c0-91ef79ac9c56/-/preview/700x700/-/quality/smart_retina/-/format/auto/" alt="" className="img" />
-                  <Box  className="absolute flex center auto items-center col text-center">
-                    <Typography className='center text-center' sx={{fontSize:'3em',textShadow:' #000000cc',color:'white'}}>{text('Organic Herbs', 'أعشاب عضوية')}
-</Typography>
-                    <Btn
-            onClick={()=>router.push('/rental/collection')}
-
-                    
-                    sx={{border:'none',mx:'auto'}}>
-                    {text('SHOP NOW', 'تسوق الآن')}
-
-                    </Btn>
-                  </Box>
-            </Box>
-          
-      </Container> */}
-
-      {/* <HomeProductCollection  products={data}/> */}
-
-
-      {/* <Container  className='flex center wrap items-center row' sx={{py:5,my:8,mx:'auto',maxWidth:'lg',background:'#f4f8fd',}}>
-        <Box>
-        <Typography sx={{width:'100%',maxWidth:'600px',flex:1,fontSize:{xs:'.95em',sm:'1.19em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
-            
-        {text('At Al halabi , we’re committed to sustainability. That’s why we use eco-friendly packaging and support sustainable farming practices to ensure that our products have a minimal impact on the environment.', 'في ترو ناشور بليند، نحن ملتزمون بالاستدامة. لهذا السبب نستخدم تعبئة صديقة للبيئة وندعم ممارسات الزراعة المستدامة لضمان أن منتجاتنا لها تأثير أدنى على البيئة.')}
-
-            </Typography>
-        </Box>
-        
-        <Box sx={{ width:{xs:'200px',sm:'200px'},height:{xs:'200px',sm:'200px'},my:1}} className='auto rounded'>
-          <img src="https://funmauj.b-cdn.net/test/928368.jpg" alt="" className="img rounded" />
-        </Box>
-        </Container>        */}
-    {/* <FullscreenPoster/> */}
-    {/* <HomeProductsCarousel Collectiontitle={"Browse Our Collections"} delay={3000} data={data?.featuredProducts?.slice(10,18)}/> */}
-    {/* <HomeProductsCarousel Collectiontitle={"Browse Our Collections"} delay={3000} data={data?.featuredProducts?.slice(18)}/> */}
-
-    {/* <Perks></Perks>
-
-    <Box sx={{my:8,height:'500px',overflow:'hidden'}} className='relative flex center items-center'>
-      <Box className="absolute" sx={{width:'100%',height:'100%',top:0,right:0,background:'black',opacity:.5}}></Box>
-      <Box sx={{maxWidth:'lg',px:1}} className="absolute center flex text-center col auto">
-        <Typography sx={{fontSize:{xs:'2.5em',sm:'3em'},fontWeight:'600',color:'white'}}>
-        {text('Our Mission', 'رسالتنا')}
-        </Typography>
-        <Typography sx={{fontSize:{xs:'.74em',sm:'.9em'},color:'white',maxWidth:'800px'}} className='auto'>
-        {text('Our mission at Al halabi  is to provide our customers with the highest quality natural supplements to support their health and wellness goals. We’re committed to sustainability and supporting the environment, and we believe in the power of nature to help us live our best lives.', 'مهمتنا في ترو ناشور بليند هي تقديم أعلى جودة من المكملات الطبيعية لدعم أهداف الصحة والعافية لعملائنا. نحن ملتزمون بالاستدامة ودعم البيئة، ونؤمن بقوة الطبيعة في مساعدتنا على عيش أفضل حياة.')}
-
-        </Typography>
-        <Btn
-        onClick={()=>router.push('/about')}
-        sx={{mt:2,mx:'auto'}} v2>
-        {text('Reach Us', 'تواصل معنا')}
-      </Btn>
-      </Box>
-      <Box sx={{height:'100%',width:'100%'}}>
-      <img src="https://images.pexels.com/photos/18546455/pexels-photo-18546455/free-photo-of-black-volkswagen-alltrack.jpeg?auto=compress&cs=tinysrgb&w=1600&h=750&dpr=1" alt="" className="img" />
- 
-      </Box>
-
-      </Box>        
-      // */}
-
-{/* <Testimonials/> */}
-<Perks></Perks>
-        {/* <ContactSection/> */}
   </Box>
   )
 }

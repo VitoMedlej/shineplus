@@ -5,10 +5,10 @@ import React from 'react'
 
 
 let style1 = {
-  color: 'black',
-  background: 'white',
-  border:'1px solid',
-  borderRadius: '0px', 
+  color: 'white',
+  background: 'black',
+  border:'1px solid #cf2935',
+  borderRadius: '3px', 
   transition: 'background 0.3s ease, transform 0.2s ease',
 
   ':hover': {
@@ -27,7 +27,8 @@ let style2 = {
   color: 'white',
   background: 'transparent',
   border: '1px solid white',
-  borderRadius: '0px', 
+  borderRadius: '3px', 
+
   // boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
   transition: 'background 0.3s ease, transform 0.2s ease',
 
@@ -48,7 +49,7 @@ const Btn = ({v2,disabled,onClick,className,children,sx,submit}:{submit?:boolean
   return (
     <Button
     type={submit ? 'submit' : 'button'}
-    className={`trans ${className ? className : ''}`}
+    className={`trans bg2 ${className ? className : ''}`}
     disabled={disabled || false}
     onClick={onClick &&onClick}
     sx={v2 ? {...style2 , ...sx} : {...style1 , ...sx} }>{children}</Button>

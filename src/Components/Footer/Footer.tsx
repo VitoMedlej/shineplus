@@ -18,7 +18,7 @@ const Footer = () => (
               {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img className='img ' src='https://ucarecdn.com/36652ae5-ba61-45de-b9e2-dc30dd210f57/whitelogo.png' alt="Al halabi Lebanon Logo" />
+            <img className='img ' src='https://ucarecdn.com/5262b9e9-1a00-4d46-8848-c02f68e4c14b/logo.jpg' alt="Al halabi Lebanon Logo" />
             </Link>
           </div>
           <Typography component='h1' sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
@@ -45,7 +45,7 @@ const Footer = () => (
             {/* <li><Link href="/rental/collection">All Products</Link></li>  */}
             <li><Link href="/terms-and-conditions">Terms & Conditions</Link></li>
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link href="https://wa.me/+96170444022">Contact Us</Link></li>
+            <li><Link href="https://wa.me/++961 3 545 717">Contact Us</Link></li>
           </ul>
      
           <ul  className='ul-white' style={{color:'white'}}>

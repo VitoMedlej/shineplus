@@ -2,19 +2,20 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
 
 
 }
 * ,h1,h2,h3,h4,h5,h6 ,p,button,input,select,textarea,a{
-    font-family: 'Poppins', sans-serif !important;
-}
+    font-family: 'Montserrat', sans-serif !important;
+
+    }
 .w100 {
     width:100%
 }
-$color : #0273b5 !important;
-$color2 : #000000 !important;
-$color3 : #f27a23 !important;
+$color : #161e21 !important;
+$color2 : #cf2935 !important;
+$color3 : #161e21 !important;
 .color3 {
     color: $color3;
 }
@@ -124,6 +125,12 @@ button[disabled]{
 }
 .clr {
     color: $color;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.clr2 {
+    color : $color2
 }
 .auto{
     margin: 0 auto;

@@ -51,7 +51,7 @@ const NavButtom = () => {
 
   return (
     <Box
-        className=' wrap  space-evenly'
+        className=' wrap  row'
         sx={{
             flex:1,
             position:'relative',
@@ -62,8 +62,9 @@ const NavButtom = () => {
         <Container
             className='flex   '
             sx={{
-              
             maxWidth: 'lg',
+            justifyContent: 'flex-end',
+
             overflow:'hidden',
             py:1.5,
 
@@ -73,35 +74,44 @@ const NavButtom = () => {
                     Sale
                     </Typography>
                 </Link> */}
-                <Link className='black decor-none ' href={`/rental/collection`}>
+                <Link className='black decor-none ' href={`/`}>
 
 <Typography 
-className=' cursor center flex gap1 black decor-none captialize'
+className=' cursor center white flex gap1 black decor-none captialize'
 id="button"
 component='p' sx={{width:'max-content',
 mx:'1em',
 alignItems: 'center',
 
 fontWeight:500,fontSize:{xs:'.86em',sm:'.95em'}}}>
-Collections
+Home
 </Typography>
 </Link>
 
 
 
-<Link className='black decor-none ' href={`/about`}>
+{
+    [
+`About`,
+`Gallery`,
+`Services`,
 
-<Typography 
-className=' cursor center flex gap1 black decor-none '
-id="button"
-component='p' sx={{width:'max-content',
-mx:'1em',
-alignItems: 'center',
+    ].map(i=>{
+        return <Link key={i} className='black decor-none ' href={`/${i.toLocaleLowerCase()}`}>
 
-fontWeight:500,fontSize:{xs:'.86em',sm:'.95em'}}}>
-About Us
-</Typography>
-</Link>
+        <Typography 
+        className=' cursor center white flex gap1 black decor-none '
+        id="button"
+        component='p' sx={{width:'max-content',
+        mx:'1em',
+        alignItems: 'center',
+        
+        fontWeight:500,fontSize:{xs:'.86em',sm:'.95em'}}}>
+        {i}
+        </Typography>
+        </Link>
+    })
+}
 
 {/* <Link className='black decor-none uppercase' href={`/new-arrivals/products`}>
 

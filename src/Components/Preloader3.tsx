@@ -15,14 +15,13 @@ import useLanguage from '@/Hooks/useLanguage';
 const Preloader3 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState([
-        {img:`https://ucarecdn.com/c582441b-9ce1-459f-b4a6-b6c92a26da66/2103880.jpg`},
-        {img : `https://ucarecdn.com/674fcd0e-3990-403d-84de-ef8f6b6351b9/peakpx2.jpg`},
-        {img:`https://ucarecdn.com/4af6db3a-3c96-45b7-b247-3a4971f2f8f8/1600x9002605155mercedeshdimageforwallpaper.jpg`},
-        {img:`https://ucarecdn.com/4990a185-a2ea-43fb-ac9b-c8b7a00fe0d5/download.jfif`}
+        {img:`https://detailtime.net/wp-content/uploads/2022/01/best-auto-detailing-1200x801.webp`},
+        {img : `https://i.pinimg.com/originals/c2/fe/dc/c2fedcef65f8ceb8cf4937c6407e6792.jpg`},
+        {img:`https://www.schellerautorepairlexington.com/build/assets/files/page_editor_header_images/iStock-1150096156.jpg`},
      ])
      const redir = () => {
-        router.push('/rental/collection')
-        console.log('abc')
+        router.push('/')
+        // console.log('abc')
      }
     useEffect(() => {
         console.log('res: ', res);
@@ -77,38 +76,45 @@ const Preloader3 = ({res}:{res:any}) => {
                                 height: '100%',
                             width:'100%'
                         }}>
-                        <Container className='auto' sx={{width:'100%'}} maxWidth='lg' disableGutters>
+                        <Container className='auto center text-center ' sx={{width:'100%'}} maxWidth='lg' disableGutters>
                             
                       
-                            <Box sx={{pointerEvents:'none',top:0,right:0,width:'100%',zIndex:1123,height:'100%',background:'black',opacity:.43}} className="absolute">
+                            <Box sx={{pointerEvents:'none',top:0,right:0,width:'100%',zIndex:1123,height:'100%',background:'black',opacity:.55}} className="absolute">
 
                             </Box>
                             <Box 
-                            className='auto'
+                            className='auto center text-center'
                             sx={{
                                 top:'50%',
                                 px:{xs:4,sm:5,md:6},
-                                maxWidth:'650px',
+                                // maxWidth:'850px',
                                 transform:'translateY(-50%)',
                                 zIndex:123456,
                                 position:'absolute'}}>
-                                <Typography 
-                                
-                                sx={{color:'white',fontSize:{xs:'2.65em',sm:'3.1em',md:'3.65em',lg:'4em'},fontWeight:900}}>
-                             
-                                Al Halabi For Business Cars And More 
-                                </Typography>
-                                <Typography 
-                                sx={{color:'white',fontSize:{xs:'.85em',sm:'.87em'},mt:1,maxWidth:'600px'}}>
-                                    Hundreds of the best cars to rent today at Al Halabi! 
+                                                          <Typography 
+                                                          className='clr2 center text-center auto'
+                                sx={{fontWeight:700,fontSize:{xs:'1.185em',sm:'1.2em'},mt:1,maxWidth:'600px'}}>
+                                   Shine Plus Car Spa
 
                                 </Typography>
-                                <Box className="flex">
+                                <Typography 
+                                
+                                sx={{color:'white',fontSize:{xs:'2.15em',sm:'3.1em',md:'3.65em',lg:'3.5em'},fontWeight:'900'}}>
+                             
+                             WHERE EXCELLENCE MEETS AUTOMOTIVE CARE
+                                </Typography>
+                                <Typography 
+                                className='center auto text-center'
+                                sx={{color:'white',fontSize:{xs:'.85em',sm:'.87em'},mt:1,maxWidth:'600px'}}>
+                                  We take pride in providing the best-in-class services to keep your vehicle in pristine condition.
+
+                                </Typography>
+                                <Box className="flex auto">
 
                                 <Btn
                                 onClick={()=>redir()}
                                 
-                                className='bg white borderColor' sx={{mt:3}}>
+                                className='bg white borderColor ' sx={{mx:'auto',mt:3}}>
                                VIEW ALL CARS
 
                                 </Btn>

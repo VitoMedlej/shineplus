@@ -2,11 +2,11 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 *, h1, h2, h3, h4, h5, h6, p, button, input, select, textarea, a {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .w100 {
@@ -14,7 +14,7 @@ body {
 }
 
 .color3 {
-  color: #f27a23 !important;
+  color: #161e21 !important;
 }
 
 .img {
@@ -29,15 +29,15 @@ body {
 }
 
 .bg2 {
-  background: #000000 !important;
+  background: #cf2935 !important;
 }
 
 .borderColor {
-  border-color: #0273b5 !important;
+  border-color: #161e21 !important;
 }
 
 .borderColor2 {
-  border-color: #000000 !important;
+  border-color: #cf2935 !important;
 }
 
 .rounded {
@@ -45,11 +45,11 @@ body {
 }
 
 .color2 {
-  color: #000000 !important;
+  color: #cf2935 !important;
 }
 
 .color {
-  color: #0273b5 !important;
+  color: #161e21 !important;
 }
 
 .flex {
@@ -93,7 +93,7 @@ body {
 }
 
 .bg {
-  background: #0273b5 !important;
+  background: #161e21 !important;
 }
 
 .white {
@@ -146,7 +146,15 @@ button[disabled] {
 }
 
 .clr {
-  color: #0273b5 !important;
+  color: #161e21 !important;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.clr2 {
+  color: #cf2935 !important;
 }
 
 .auto {
