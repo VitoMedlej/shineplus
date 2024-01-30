@@ -72,7 +72,7 @@ export default function Navbar() {
             margin: '0 auto',
         }}>
                   <Box className='flex items-center row'
-                   sx={{justifyContent:'flex-end',background:'white',py:.3}}>
+                   sx={{justifyContent:'flex-end',background:'#cf2935',py:.3}}>
 <Container className='flex ' sx={{margin:0,justifyContent:'space-between',maxWidth:{xs:'100%',sm:'500px'}}}>
 
             <Box className='flex row items-center'>

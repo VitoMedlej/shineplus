@@ -4,21 +4,38 @@ import { Container, Box, Typography, Divider } from '@mui/material'
 import React from 'react'
 
 const text = [
-    `Your health is our top priority. We meticulously curate our product range to ensure that you have access to the highest-quality natural supplements available. From ancient remedies like ashwagandha and tongkat ali to the modern marvels of cordyceps and lion's mane mushrooms, we've assembled a premium collection that's designed to support your journey toward optimal health.`,
-    `At Truenaturalblend, excellence is not just a goal; it's our way of life. We are committed to providing you with products that are not only effective but also safe. Our team of experts works tirelessly to source the purest and most potent ingredients from nature's bounty.`,
-    `We believe that when you choose Truenaturalblend, you're choosing a partner on your path to a healthier and more vibrant life.`,
-    `Our commitment extends beyond your well-being. We're equally dedicated to the well-being of our planet. That's why we use eco-friendly packaging and support sustainable farming practices. We believe that by preserving the environment, we can help ensure a healthier future for generations to come.`,
+    `
+    Welcome to Shine Plus Car Spa, your premier destination for professional automotive care in Lebanon. At Shine Plus, we take pride in our commitment to delivering exceptional car spa services, ensuring your vehicle receives the royal treatment it deserves.
+`,
+    `
+    With a passion for perfection and a keen eye for detail, Shine Plus Car Spa has become a trusted name in the automotive industry. Our team of skilled technicians is dedicated to enhancing the appearance and performance of your vehicle, providing a comprehensive range of services tailored to meet the unique needs of each customer.
+    `,
+    `
+    What sets Shine Plus Car Spa apart is our unwavering commitment to quality and customer satisfaction. We use state-of-the-art equipment and premium products to deliver outstanding results, whether you opt for our signature car wash, paint correction, or luxurious interior detailing services. Your satisfaction is our priority, and we go the extra mile to ensure your car leaves our spa looking pristine and rejuvenated.
+    `,
+    `
+    At Shine Plus Car Spa, we understand that your vehicle is more than just a mode of transportation; it's a reflection of your personality and style. That's why we treat every car with the utmost care and attention, as if it were our own. Our team's expertise, combined with our passion for perfection, guarantees an unparalleled car spa experience that leaves a lasting shine.
+    `,
+    `
+    As a Lebanese brand, we take pride in contributing to the local automotive community. We strive to set new standards in car care, combining traditional Lebanese hospitality with cutting-edge techniques to provide an unmatched level of service.
+ `,
+    `
+    Experience the difference at Shine Plus Car Spa – where your car's beauty meets our expertise. Trust us to pamper your vehicle, and we promise to exceed your expectations, leaving you with a car that shines brighter than ever before.
+    `,
+`    
+    Thank you for choosing Shine Plus Car Spa – Your Car's Sanctuary in Lebanon.`
   
 ]
 const Index = () => {
   return (
     <Container maxWidth='lg' className='auto' sx={{mx:1,py:4}}>
-           <Typography sx={{mb:1,mx:'auto',fontSize:'2.5em',fontWeight:'600'}} className=" center text-center">
-            ABOUT US
+           <Typography component='h1' sx={{mb:1,mx:'auto',fontSize:'3.5em',fontStyle:'italic',fontWeight:'900'}} className=" center text-center">
+            ABOUT US - Shine Plus
         </Typography>
-        <Box sx={{width:'100%',height:'400px'}}>
+        
+        {/* <Box sx={{width:'100%',height:'400px'}}>
             <img src="https://ucarecdn.com/5262b9e9-1a00-4d46-8848-c02f68e4c14b/logo.jpg" alt="" className="img contain" />
-        </Box>
+        </Box> */}
     
         <Box sx={{my:4}}>
                 {
@@ -27,11 +44,11 @@ const Index = () => {
                     })
                 } 
         </Box>
-        <Divider></Divider>
+        {/* <Divider></Divider>
         <Typography sx={{pt:4, mb:1,mx:'auto',fontSize:'2.5em',fontWeight:'600'}} className=" center text-center">
             Frequently Asked Questions
         </Typography>
-            <FAQ/>
+            <FAQ/> */}
     </Container>
   )
 }
