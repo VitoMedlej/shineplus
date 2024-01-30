@@ -12,10 +12,10 @@ import useLanguage from '@/Hooks/useLanguage';
 
 
 
-const Preloader3 = ({res}:{res:any}) => {
+const Preloader4 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState([
-        {img:`https://ucarecdn.com/e5b67a41-beb9-4882-91e9-dd9f6fbbc100/bestautodetailing1200x801.webp`},
+        {img:`https://th.bing.com/th/id/R.c1c0845f0d16c0b2ee4e596901075796?rik=qV1Gz5ziGW0c7Q&pid=ImgRaw&r=0`},
      ])
      const redir = () => {
         router.push('/')
@@ -99,12 +99,12 @@ const Preloader3 = ({res}:{res:any}) => {
                                 
                                 sx={{color:'white',fontSize:{xs:'2.15em',sm:'3.1em',md:'3.65em',lg:'3.5em'},fontWeight:'900'}}>
                              
-                             WHERE EXCELLENCE MEETS AUTOMOTIVE CARE
+                           Explore Shine Plus Car Spa Offerings
                                 </Typography>
                                 <Typography 
                                 className='center auto text-center'
                                 sx={{color:'white',fontSize:{xs:'.85em',sm:'.87em'},mt:1,maxWidth:'600px'}}>
-                                  We take pride in providing the best-in-class services to keep your vehicle in pristine condition.
+                               Discover a range of options designed to pamper your vehicle, ensuring it radiates elegance on every road. 
 
                                 </Typography>
                                 <Box className="flex auto">
@@ -139,4 +139,4 @@ const Preloader3 = ({res}:{res:any}) => {
     )
 }
 
-export default Preloader3
+export default Preloader4

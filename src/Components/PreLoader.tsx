@@ -11,7 +11,7 @@ import Perks from './Perks/Perks'
 import Testimonials from './Testimonials/Testimonials'
 import Btn from './Btn/Btn'
 import useLanguage from '@/Hooks/useLanguage'
-import { InstagramEmbed } from 'react-social-media-embed'
+import { FacebookEmbed, InstagramEmbed } from 'react-social-media-embed'
 
 const 
 PreLoader = ({data,resImages}:any) => {
@@ -207,7 +207,18 @@ SUV: $250`}
   <Box sx={{height:{xs:'95%',sm:'32%'},width:{xs:'95%',sm:'32%'}}}>
   <InstagramEmbed url="https://www.instagram.com/p/C092W1MseCj/" height={'100%'} width='100%' />
                                         </Box>
-  
+                                      
+                                        <Box sx={{height:{xs:'95%',sm:'32%'},width:{xs:'95%',sm:'32%'}}}>
+  <FacebookEmbed url="https://www.facebook.com/reel/1545762639554454" height={'100%'} width='100%' />
+                                        </Box>
+                                      
+                                        <Box sx={{height:{xs:'95%',sm:'32%'},width:{xs:'95%',sm:'32%'}}}>
+  <FacebookEmbed url="https://www.facebook.com/reel/1021543948928340" height={'100%'} width='100%' />
+                                        </Box>
+            
+                                        <Box sx={{height:{xs:'95%',sm:'32%'},width:{xs:'95%',sm:'32%'}}}>
+  <FacebookEmbed url="https://www.facebook.com/reel/1575941249888760" height={'100%'} width='100%' />
+                                        </Box>
 </div>
                                 </Container>      
   </Box>

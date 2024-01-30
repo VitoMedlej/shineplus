@@ -20,7 +20,7 @@ const Preloader3 = ({res}:{res:any}) => {
         {img:`https://www.schellerautorepairlexington.com/build/assets/files/page_editor_header_images/iStock-1150096156.jpg`},
      ])
      const redir = () => {
-        router.push('/')
+        router.push('/services')
         // console.log('abc')
      }
     useEffect(() => {
@@ -115,7 +115,7 @@ const Preloader3 = ({res}:{res:any}) => {
                                 onClick={()=>redir()}
                                 
                                 className='bg white borderColor ' sx={{mx:'auto',mt:3}}>
-                               VIEW ALL CARS
+                             View Services
 
                                 </Btn>
                             

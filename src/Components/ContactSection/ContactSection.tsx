@@ -66,7 +66,7 @@ const [endDate, setEndDate] = useState(new Date());
         </Typography>
   
   <a className='flex auto  items-center align-center gap gap1 black' href='https://wa.me/+96103545717' target='_blank' rel='noopener'>
-    <CiLocationOn/>
+    
         <Typography sx={{fontSize:{xs:'1.15em'},fontWeight:'500'}}>
                     
     +961 03 545 717
@@ -74,14 +74,22 @@ const [endDate, setEndDate] = useState(new Date());
   </a>
 
   <a className='flex auto  items-center align-center gap gap1 black' href='https://www.instagram.com/shineplus_carspa/' target='_blank' rel='noopener'>
-    <CiLocationOn/>
+    
         <Typography sx={{fontSize:{xs:'1.15em'},fontWeight:'500'}}>
                     
     Instagram
         </Typography>
   </a>
+
+  <a className='flex auto  items-center align-center gap gap1 black' href='https://www.facebook.com/shinepluscarspa/' target='_blank' rel='noopener'>
+    
+        <Typography sx={{fontSize:{xs:'1.15em'},fontWeight:'500'}}>
+                    
+    Facebook
+        </Typography>
+  </a>
   <a className='flex auto  items-center align-center gap gap1 black' href='' target='_blank' rel='noopener'>
-    <CiLocationOn/>
+  <CiLocationOn/>
         <Typography sx={{my:2,fontSize:{xs:'1.15em'},fontWeight:'500'}}>
                     
         Beirut / Hadath
