@@ -16,8 +16,6 @@ const Preloader3 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState([
         {img:`https://ucarecdn.com/e5b67a41-beb9-4882-91e9-dd9f6fbbc100/bestautodetailing1200x801.webp`},
-        {img : `https://i.pinimg.com/originals/c2/fe/dc/c2fedcef65f8ceb8cf4937c6407e6792.jpg`},
-        {img:`https://www.schellerautorepairlexington.com/build/assets/files/page_editor_header_images/iStock-1150096156.jpg`},
      ])
      const redir = () => {
         router.push('/')

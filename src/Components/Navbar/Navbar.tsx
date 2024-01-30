@@ -94,10 +94,13 @@ export default function Navbar() {
             Mon - Fri: 9:00 - 12:00 
             </Typography>
             </Box>
-
+            <a className='decor-none' href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}?text=${encodeURIComponent("Hello, I would like to book a 'Full Treatment Package' for my car.  Thank you.")}`}>
             <Btn sx={{display:{xs:'none',sm:'flex'},py:.2}}>
-                Book Now
-            </Btn>
+                                         
+                                    BOOK NOW
+                                  </Btn>
+      </a>                        
+       
 </Container>
 
             </Box>
@@ -128,7 +131,7 @@ export default function Navbar() {
     <img
         className='img contain'
         src={`https://ucarecdn.com/5262b9e9-1a00-4d46-8848-c02f68e4c14b/logo.jpg`}
-        alt="Al halabi  logo"/>
+        alt="Shine Plus Car Spa  logo"/>
 </Box>
 </Link>
                 <Box

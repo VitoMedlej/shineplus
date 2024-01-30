@@ -4,8 +4,8 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import Btn from '@/Components/Btn/Btn'
 import {CiLocationOn} from 'react-icons/ci'
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+// import DatePicker from "react-datepicker";
+// import "react-datepicker/dist/react-datepicker.css";
 
 
 
@@ -65,27 +65,29 @@ const [endDate, setEndDate] = useState(new Date());
         Contact Information:
         </Typography>
   
-  <a className='flex auto  items-center align-center gap gap1 black' href='' target='_blank' rel='noopener'>
+  <a className='flex auto  items-center align-center gap gap1 black' href='https://wa.me/+96103545717' target='_blank' rel='noopener'>
     <CiLocationOn/>
         <Typography sx={{fontSize:{xs:'1.15em'},fontWeight:'500'}}>
                     
-        Alley/ bchara el khoury street
+    +961 03 545 717
+        </Typography>
+  </a>
+
+  <a className='flex auto  items-center align-center gap gap1 black' href='https://www.instagram.com/shineplus_carspa/' target='_blank' rel='noopener'>
+    <CiLocationOn/>
+        <Typography sx={{fontSize:{xs:'1.15em'},fontWeight:'500'}}>
+                    
+    Instagram
         </Typography>
   </a>
   <a className='flex auto  items-center align-center gap gap1 black' href='' target='_blank' rel='noopener'>
     <CiLocationOn/>
         <Typography sx={{my:2,fontSize:{xs:'1.15em'},fontWeight:'500'}}>
                     
-        Beirut / bouchrieh .st Joseph street
+        Beirut / Hadath
         </Typography>
   </a>
-  <a className='flex auto  items-center align-center gap gap1 black' href='' target='_blank' rel='noopener'>
-    <CiLocationOn/>
-        <Typography sx={{fontSize:{xs:'1.15em'},fontWeight:'500'}}>
-                    
-        Aabadieh / hotel Golden Lili
-        </Typography>
-  </a>
+  
 
     </Container>
         </Grid> 
@@ -106,8 +108,8 @@ const [endDate, setEndDate] = useState(new Date());
 
               onChange={(e)=>setFullName(e?.target?.value)} 
               name={'FullName'} sx={{width:'99%',py:1}} variant='outlined' placeholder='Full Name'/>
-           <DatePicker name='StartDate' selected={startDate} onChange={(date:Date) => setStartDate(date)} />
-           <DatePicker  name='EndDate' selected={endDate} onChange={(date:Date) => setEndDate(date)} />
+           {/* <DatePicker name='StartDate' selected={startDate} onChange={(date:Date) => setStartDate(date)} /> */}
+           {/* <DatePicker  name='EndDate' selected={endDate} onChange={(date:Date) => setEndDate(date)} /> */}
             {/* <DatePicker
   label="Controlled picker"
   value={date1}

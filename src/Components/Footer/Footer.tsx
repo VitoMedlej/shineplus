@@ -8,8 +8,8 @@ import './style.css'
 
 
 const Footer = () => (
-  <footer className="site-footer " style={{color:'white',background:'black'}}>
-    <div className="container " style={{color:'white',background:'black'}}>
+  <footer className="site-footer " style={{color:'white',background:'#161e21'}}>
+    <div className="container " style={{color:'white',background:'#161e21'}}>
       <div className="site-footer__top ">
         <div className="site-footer__description">
           <div className='logos cursor'>
@@ -18,11 +18,11 @@ const Footer = () => (
               {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img className='img ' src='https://ucarecdn.com/5262b9e9-1a00-4d46-8848-c02f68e4c14b/logo.jpg' alt="Al halabi Lebanon Logo" />
+            <img className='img ' src='https://ucarecdn.com/5262b9e9-1a00-4d46-8848-c02f68e4c14b/logo.jpg' alt="Shine Plus Car Spa Lebanon Logo" />
             </Link>
           </div>
           <Typography component='h1' sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
-           Ready to experience the convenience and reliability of Al Halabi Car Rental? Reserve your preferred vehicle today and embark on a stress-free journey in Lebanon.
+          At Shine Plus Car Spa, we offer top-notch car care services in Lebanon. From expert car wash and interior detailing to exterior treatments, window tinting, vinyl wrap, upholstery repair, body paint, and more – trust us for a sparkling clean and well-maintained ride.
           </Typography>
           {/* <SMicons/> */}
 
@@ -45,7 +45,7 @@ const Footer = () => (
             {/* <li><Link href="/rental/collection">All Products</Link></li>  */}
             <li><Link href="/terms-and-conditions">Terms & Conditions</Link></li>
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link href="https://wa.me/++961 3 545 717">Contact Us</Link></li>
+            <li><Link href="https://wa.me/+96103545717">Whatsapp Us</Link></li>
           </ul>
      
           <ul  className='ul-white' style={{color:'white'}}>
@@ -54,7 +54,7 @@ const Footer = () => (
             
             {/* <li><a href="https://www.facebook.com/profile.php?id=100076163602459/" target="_blank" rel="noreferrer" >Facebook</a></li> */}
 
-            <li><a href="https://www.instagram.com/Al halabi /" target="_blank" rel="noreferrer" >@Al halabi </a></li>
+            <li><a href="https://www.instagram.com/Shine Plus Car Spa /" target="_blank" rel="noreferrer" >@Shine Plus Car Spa </a></li>
             <li><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer" target='_blank' >+{process.env.NEXT_PUBLIC_WA}</a></li>
             {/* <li><a href={`http://tiktok.com/@thecraftroomlb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
           </ul>

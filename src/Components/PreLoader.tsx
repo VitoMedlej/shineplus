@@ -11,6 +11,7 @@ import Perks from './Perks/Perks'
 import Testimonials from './Testimonials/Testimonials'
 import Btn from './Btn/Btn'
 import useLanguage from '@/Hooks/useLanguage'
+import { InstagramEmbed } from 'react-social-media-embed'
 
 const 
 PreLoader = ({data,resImages}:any) => {
@@ -25,12 +26,12 @@ PreLoader = ({data,resImages}:any) => {
     {
       id: 2,
       title: text('Flexible Rental Options', 'النقاء والفعالية'),
-      desc: text(`Whether you need a car for a day, a week, or longer, we offer flexible rental durations to suit your schedule. You're in control of your rental experience with Al Halabi.`, 'نحن نختار مكوناتنا بعناية بسبب نقاوتها وفعاليتها، مما يضمن لك الحصول على أفضل النتائج من مكملاتنا.')
+      desc: text(`Whether you need a car for a day, a week, or longer, we offer flexible rental durations to suit your schedule. You're in control of your rental experience with Shine Plus Car Spa.`, 'نحن نختار مكوناتنا بعناية بسبب نقاوتها وفعاليتها، مما يضمن لك الحصول على أفضل النتائج من مكملاتنا.')
     },
     {
       id: 3,
       title: text('Competitive Pricing', 'صياغة خبيرة'),
-      desc: text(`We offer affordable rates without compromising on the quality of our service. Enjoy the best value for your money when you choose Al Halabi.`, 'تم صياغة مكملاتنا بخبرة من قبل فريق من المحترفين ذوي الخبرة، مما يضمن لك الحصول على أفضل النتائج في كل مرة.')
+      desc: text(`We offer affordable rates without compromising on the quality of our service. Enjoy the best value for your money when you choose Shine Plus Car Spa.`, 'تم صياغة مكملاتنا بخبرة من قبل فريق من المحترفين ذوي الخبرة، مما يضمن لك الحصول على أفضل النتائج في كل مرة.')
     },
     {
       id: 4,
@@ -165,26 +166,50 @@ SUV: $250`}
 ✓ Door Edge Guard
 ✓ AC Bacteria Treatment (One Shot and Foam)`}
                                   </Typography>
+                                  <a className='decor-none' href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}?text=${encodeURIComponent("Hello, I would like to book a 'Full Treatment Package' for my car.  Thank you.")}`}>
                                   <Btn className='' sx={{mt:'1em',mx:'auto'}}>
+                                         
                                     BOOK NOW
                                   </Btn>
+      </a>                                
                                   </Box>
                                 </Box>
           </Box>
 
 
 
-                              <Container sx={{maxWidth:'lg'}}>
+                              {/* <Container sx={{maxWidth:'lg'}}>
                                     {
                                       [].map(i=>{
-                                        return <Box sx={{height:{xs:'48%',sm:'32%'},width:{xs:'48%',sm:'32%'}}}>
+                                        return <Box sx={{height:{xs:'95%',sm:'32%'},width:{xs:'95%',sm:'32%'}}}>
                                               <img src="" alt="" className="img" />
                                         </Box>
                                       })
                                     }
-                              </Container>
+                              </Container> */}
 
+                              <Container sx={{maxWidth:'lg',mx:'auto',mt:2}}>
+                              <Typography className='clr2' sx={{fontWeight:700,fontSize:'1.15em',fontStyle:'italic',pt:{xs:8,sm:10},pb:1,maxWidth:'800px',}}>
+        Our Social Media
+      </Typography>
+      <Typography sx={{fontWeight:900,fontSize:'2.5em',maxWidth:'800px',fontStyle:'italic',textTransform:'uppercase'}}>
+      View Our Instagram
+      </Typography>
+                              <div className='wrap row' style={{ marginTop:'1em',display: 'flex', justifyContent: 'center' }}>
+                              <Box sx={{height:{xs:'95%',sm:'32%'},width:{xs:'95%',sm:'32%'}}}>
 
+  <InstagramEmbed url="https://www.instagram.com/p/C1aPiCFsRzB/"  height={'100%'} width='100%' />
+                              </Box>
+  <Box sx={{height:{xs:'95%',sm:'32%'},width:{xs:'95%',sm:'32%'}}}>
+
+  <InstagramEmbed url="https://www.instagram.com/p/C1SXvVjsZO2/"  height={'100%'} width='100%' />
+  </Box>
+  <Box sx={{height:{xs:'95%',sm:'32%'},width:{xs:'95%',sm:'32%'}}}>
+  <InstagramEmbed url="https://www.instagram.com/p/C092W1MseCj/" height={'100%'} width='100%' />
+                                        </Box>
+  
+</div>
+                                </Container>      
   </Box>
   )
 }
