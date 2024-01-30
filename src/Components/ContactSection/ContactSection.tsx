@@ -20,9 +20,11 @@ const Index = () => {
       const [Phone, setPhone] = useState('')
 const [FullName, setFullName] = useState('')
 const [Message, setMessage] = useState('')
-const [startDate, setStartDate] = useState(new Date());
-const [endDate, setEndDate] = useState(new Date());
+let message = `Hello my name is ${FullName}. My phone number is ${Phone}. I am interested in your services.`;
+
+let url = `https://wa.me/${process.env.NEXT_PUBLIC_WA}?text=${encodeURIComponent(message)}`;
   const sendMessage = async(e : any) => {
+
 
     e.preventDefault();
     if (!form.current) 
@@ -32,18 +34,18 @@ const [endDate, setEndDate] = useState(new Date());
     setStatus(400)
     return;
   }
-   
+  window.open(url);
 
-    const req = await emailjs.sendForm(`service_i9h8mw5`, 'template_hml9w5k', form.current, 'YUsR8yA3kMr0Gmz1j')
-    const res = await req
-    console.log('res: ', res);
-    setStatus(res ? res?.status : 400)
-    if (res?.status && form?.current) {
-      form?.current?.reset()
-      setFullName('')
-    setPhone('')
-    setMessage('')
-}
+//     const req = await emailjs.sendForm(`service_i9h8mw5`, 'template_hml9w5k', form.current, 'YUsR8yA3kMr0Gmz1j')
+//     const res = await req
+//     console.log('res: ', res);
+//     setStatus(res ? res?.status : 400)
+//     if (res?.status && form?.current) {
+//       form?.current?.reset()
+//       setFullName('')
+//     setPhone('')
+//     setMessage('')
+// }
 };
 
   return (
@@ -130,7 +132,7 @@ const [endDate, setEndDate] = useState(new Date());
   onChange={(newValue) => setDate2(`${newValue}`)}
 /> */}
              
-              <TextField name={'CarName'} onChange={(e)=>setEmail(e?.target?.value)} variant='outlined' sx={{width:'99%',py:1}} type='text' placeholder='Car Type'/>
+              {/* <TextField name={'CarName'} onChange={(e)=>setEmail(e?.target?.value)} variant='outlined' sx={{width:'99%',py:1}} type='text' placeholder='Car Type'/> */}
               <TextField name={'Phone'} 
               value={Phone}
             type='number'
@@ -140,7 +142,7 @@ const [endDate, setEndDate] = useState(new Date());
               value={Message}
               onChange={(e)=>setMessage(e?.target?.value)} 
               
-              name={'Message'} multiline={true} variant='outlined' rows={4}  sx={{width:'99%',py:2}} placeholder='Any Notes'/>
+              name={'Message'} multiline={true} variant='outlined' rows={4}  sx={{width:'99%',py:2}} placeholder='Message'/>
               <Btn
 submit
    

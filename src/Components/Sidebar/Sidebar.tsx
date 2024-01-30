@@ -13,13 +13,7 @@ import {GrFormClose} from 'react-icons/gr'
 // import NestedAccordion from './NestedAccordion';
 
 
-const cars = [
-  'Small Cars',
-  'Business Cars',
-  'Luxury Business Cars',
-  'SUVs',
-  '2 Door Cars'
-]
+
 
 
 export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
@@ -85,12 +79,40 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
           <ListItem
           sx={{fontWeight:600}}
 
-          onClick={()=>{router.push(`/rental/collection`); toggleDrawer(false)}}
+          onClick={()=>{router.push(`/services`); toggleDrawer(false)}}
            disablePadding>
               <ListItemButton sx={{py:1}} >
             
                   <Typography sx={{fontWeight:600}}>
-             New Arrivals
+             Our Services
+            </Typography>
+            </ListItemButton>
+  
+
+          </ListItem>
+          <ListItem
+          sx={{fontWeight:600}}
+
+          onClick={()=>{router.push(`/about`); toggleDrawer(false)}}
+           disablePadding>
+              <ListItemButton sx={{py:1}} >
+            
+                  <Typography sx={{fontWeight:600}}>
+             About Us
+            </Typography>
+            </ListItemButton>
+  
+
+          </ListItem>
+          <ListItem
+          sx={{fontWeight:600}}
+
+          onClick={()=>{router.push(`/#Gallery`); toggleDrawer(false)}}
+           disablePadding>
+              <ListItemButton sx={{py:1}} >
+            
+                  <Typography sx={{fontWeight:600}}>
+             Gallery
             </Typography>
             </ListItemButton>
   

@@ -188,7 +188,7 @@ SUV: $250`}
                                     }
                               </Container> */}
 
-                              <Container sx={{maxWidth:'lg',mx:'auto',mt:2}}>
+                              <Container id='Gallery' sx={{maxWidth:'lg',mx:'auto',mt:2}}>
                               <Typography className='clr2' sx={{fontWeight:700,fontSize:'1.15em',fontStyle:'italic',pt:{xs:8,sm:10},pb:1,maxWidth:'800px',}}>
         Our Social Media
       </Typography>
