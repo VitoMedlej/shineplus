@@ -27,7 +27,7 @@ const ScrollUp = () => {
     
     <Btn sx={{ border:'1px solid transparent',
     borderRadius:25,
-    background:'white !important',
+    background:'#161e21  !important',
     boxShadow:`rgba(0, 0, 0, 0.24) 0px 3px 8px`,
     padding:0,':hover':{background:'transparent'}}} className='bg'>
       <Box className='center bg flex align-center' sx={{width:'30px',ml:1}}>

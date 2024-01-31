@@ -110,10 +110,12 @@ const Preloader4 = ({res}:{res:any}) => {
                                 <Box className="flex auto">
 
                                 <Btn
-                                onClick={()=>redir()}
+                                              onClick={()=>router.push('/services')}
+
                                 
                                 className='bg white borderColor ' sx={{mx:'auto',mt:3}}>
-                               VIEW ALL CARS
+                               View services
+                               
 
                                 </Btn>
                             

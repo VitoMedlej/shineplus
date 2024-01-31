@@ -74,7 +74,7 @@ PreLoader = ({data,resImages}:any) => {
               }
             ].map(i=>{
               return <Box className='relative cursor pointer'
-              onClick={()=>router.push(`/services/${encodeURIComponent(i?.title.toLowerCase())}`)}
+              onClick={()=>router.push(`/services?id=${encodeURIComponent(i?.title.toLowerCase())}`)}
               key={i.title} sx={{my:1,minWidth:{sm:'auto',md:'250px'},height:'300px',width:{xs:'49%',sm:'48%',md:'24%'}}}>
                 <Box sx={{height:'100%'}}>
 
@@ -106,10 +106,11 @@ PreLoader = ({data,resImages}:any) => {
                 We are pleased to offer our esteemed clients an opportunity to join our premium maintenance program. Our program is designed to cater to your individual needs with a choice of weekly, bi-weekly, or monthly plans.
                 </Typography>
                 <Btn
+                onClick={()=>router.push('/services')}
                              
                                 
                                 className='bg white borderColor ' sx={{mt:3,mb:{xs:3,sm:0}}}>
-                               VIEW ALL CARS
+                               View services
 
                                 </Btn>
                                 </Container>
@@ -208,7 +209,7 @@ SUV: $250`}
   <InstagramEmbed url="https://www.instagram.com/p/C092W1MseCj/" height={'100%'} width='100%' />
                                         </Box>
                                       
-                                        <Box sx={{height:{xs:'95%',sm:'32%'},width:{xs:'95%',sm:'32%'}}}>
+                                        {/* <Box sx={{height:{xs:'95%',sm:'32%'},width:{xs:'95%',sm:'32%'}}}>
   <FacebookEmbed url="https://www.facebook.com/reel/1545762639554454" height={'100%'} width='100%' />
                                         </Box>
                                       
@@ -219,7 +220,8 @@ SUV: $250`}
                                         <Box sx={{height:{xs:'95%',sm:'32%'},width:{xs:'95%',sm:'32%'}}}>
   <FacebookEmbed url="https://www.facebook.com/reel/1575941249888760" height={'100%'} width='100%' />
                                         </Box>
-</div>
+*/}
+</div> 
                                 </Container>      
   </Box>
   )

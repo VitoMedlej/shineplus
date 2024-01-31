@@ -4,6 +4,7 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import Btn from '@/Components/Btn/Btn'
 import {CiLocationOn} from 'react-icons/ci'
+import Perks from '../Perks/Perks';
 // import DatePicker from "react-datepicker";
 // import "react-datepicker/dist/react-datepicker.css";
 
@@ -52,9 +53,10 @@ let url = `https://wa.me/${process.env.NEXT_PUBLIC_WA}?text=${encodeURIComponent
     <>
  
 
+ <Perks/>
 
   
-    <Grid container maxWidth='lg'  className='auto'  sx={{pt:20,pb:5}}>
+    <Grid id='contactsection' container maxWidth='lg'  className='auto'  sx={{pt:20,pb:5}}>
     <Box className='flex auto w100'>
        
                 {/* <Divider></Divider> */}

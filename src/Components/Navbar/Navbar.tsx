@@ -94,7 +94,7 @@ export default function Navbar() {
             Mon - Fri: 9:00 - 12:00 
             </Typography>
             </Box>
-            <a className='decor-none' href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}?text=${encodeURIComponent("Hello, I would like to book a 'Full Treatment Package' for my car.  Thank you.")}`}>
+            <a className='decor-none' href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`}>
             <Btn sx={{display:{xs:'none',sm:'flex'},py:.2}}>
                                          
                                     BOOK NOW
@@ -262,7 +262,9 @@ mobile
                     
                     
 
-                            <Btn>
+                            <Btn
+                            onClick={()=>router.push('/#contactsection')}
+                            >
                                 Contact Us
                             </Btn>
 
