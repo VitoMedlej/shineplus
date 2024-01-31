@@ -45,7 +45,7 @@ const Preloader3 = ({res}:{res:any}) => {
             maxHeight:{sm:'90vh',md:'700px',lg:'750px'},
             margin: '0 auto',
          
-            height : {xs:'100vh',sm:'550px',md:'100%'},
+            height : {xs:'600px',sm:'550px',md:'100%'},
              
             display: {
                 xs: 'flex'
@@ -86,7 +86,7 @@ const Preloader3 = ({res}:{res:any}) => {
                             className='auto center text-center'
                             sx={{
                                 top:'50%',
-                                px:{xs:4,sm:5,md:6},
+                                px:{xs:1,sm:5,md:6},
                                 // maxWidth:'850px',
                                 transform:'translateY(-50%)',
                                 zIndex:123456,
@@ -99,7 +99,7 @@ const Preloader3 = ({res}:{res:any}) => {
                                 </Typography>
                                 <Typography 
                                 
-                                sx={{color:'white',fontSize:{xs:'2.15em',sm:'3.1em',md:'3.65em',lg:'3.5em'},fontWeight:'900'}}>
+                                sx={{color:'white',fontSize:{xs:'2em',sm:'3.1em',md:'3.65em',lg:'3.5em'},fontWeight:'900'}}>
                              
                              WHERE EXCELLENCE MEETS AUTOMOTIVE CARE
                                 </Typography>

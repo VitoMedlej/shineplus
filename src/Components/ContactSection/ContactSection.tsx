@@ -31,7 +31,7 @@ let url = `https://wa.me/${process.env.NEXT_PUBLIC_WA}?text=${encodeURIComponent
     if (!form.current) 
     return;
   
-  if (!email || !FullName || !Phone || !Message ) {
+  if ( !FullName || !Phone || !Message ) {
     setStatus(400)
     return;
   }
