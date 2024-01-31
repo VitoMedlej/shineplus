@@ -6,22 +6,22 @@ const Perks = () => {
     const items = [
       {
         title: "Premium Car Wash",
-        icon: "https://www.svgrepo.com/show/237130/car-wash.svg",
+        icon: "https://cdn-icons-png.flaticon.com/128/2211/2211425.png",
         description: "Experience a meticulous premium car wash service that leaves your vehicle sparkling inside and out.",
       },
       {
         title: "Expert Interior Detailing",
-        icon: "https://www.svgrepo.com/show/286836/steering-wheel-car.svg",
+        icon: "https://cdn-icons-png.flaticon.com/128/4822/4822165.png",
         description: "Indulge in our expert interior detailing to rejuvenate your car's interior, ensuring a fresh and comfortable driving experience.",
       },
       {
         title: " Paint Correction",
-        icon: "https://www.svgrepo.com/show/284377/paint-brush-art-and-design.svg",
+        icon: "https://cdn-icons-png.flaticon.com/128/887/887247.png",
         description: "Trust our professionals for paint correction, bringing back the shine and luster to your car's exterior with precision and care.",
       },
       {
         title: "Headlights Restoration",
-        icon: "https://www.svgrepo.com/show/501880/light-bulb.svg",
+        icon: "https://cdn-icons-png.flaticon.com/128/12988/12988569.png",
         description: "Enhance visibility and aesthetics with our headlights restoration service, ensuring safety and a polished look.",
       },
    
