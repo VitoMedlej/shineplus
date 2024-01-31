@@ -223,6 +223,35 @@ SUV: $250`}
 */}
 </div> 
                                 </Container>      
+<Box sx={{mt:4}} className='bg'>
+    
+    <Container sx={{py:{xs:8,sm:12}}}>
+      <Grid className='center items-center' container >
+
+    <Grid  xs={12} sm={4} md={5}>
+
+    <Typography className='clr2' sx={{fontWeight:700,fontSize:'1.15em',fontStyle:'italic',maxWidth:'800px',}}>
+    DRY CLEANING
+      </Typography>
+      <Typography className='white' sx={{pr:{sm:1,md:2},fontWeight:900,fontSize:{xs:'2.5em',sm:'2em',md:'2.5em'},maxWidth:'800px',fontStyle:'italic',textTransform:'uppercase'}}>
+      Dry cleaning any dirt inside the car and trunk
+      </Typography>
+      <Btn
+      sx={{mt:1,mb:{xs:4,sm:0}}}
+      onClick={()=>router.push('/services')}
+      >
+        View Services
+      </Btn>
+    </Grid>
+
+<Grid xs={12} sm={8} md={7}>
+    <Box>
+      <img style={{borderRadius:'5px'}} src="https://ucarecdn.com/53fae8a6-f75c-4f41-bfd9-8d11652690d3/pic.PNG" alt="" className="img" />
+    </Box>
+</Grid>
+      </Grid>
+    </Container>
+</Box>
   </Box>
   )
 }

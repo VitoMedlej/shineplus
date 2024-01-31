@@ -32,15 +32,15 @@ const Perks = () => {
 
         {
            items.map(i=>{
-                return <Box key={i.title} className='center items-center auto flex col text-center' sx={{
+                return <Box key={i.title} className='center items-center auto flex col' sx={{
                     py:3,
                     width:{xs:'47%',sm:'30%',md:'22%'}}}>
                     <Box sx={{width:'100px'}}>
                         <img src={i.icon} alt="" className="img contain" />
                     </Box>
                     <Box sx={{ml:.7}} className="flex col">
-
-                    <Typography className='clr2' sx={{pt:1,fontSize:{xs:'.89em',sm:'1.19em'},fontWeight:500}}  component={'h1'}>{i.title}</Typography>
+                    <Typography className='clr' sx={{pt:1,fontSize:{xs:'1em',sm:'1.39em'},fontWeight:700}}  component={'h1'}>{i.title}</Typography>
+                    <Typography className='clr' sx={{pt:.5,fontSize:{xs:'.75em',sm:'.8em'},fontWeight:300}}  component={'h1'}>{i?.description}</Typography>
                     </Box>
                 </Box>
             })
