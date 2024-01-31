@@ -88,12 +88,23 @@ Home
 </Typography>
 </Link>
 
+<Link  className='black decor-none ' href={`/#Gallery`}>
 
+        <Typography 
+        className=' cursor center white flex gap1 black decor-none '
+        id="button"
+        component='p' sx={{width:'max-content',
+        mx:'1em',
+        alignItems: 'center',
+        
+        fontWeight:500,fontSize:{xs:'.86em',sm:'.95em'}}}>
+       Gallery
+        </Typography>
+        </Link>
 
 {
     [
 `About`,
-`Gallery`,
 `Services`,
 
     ].map(i=>{

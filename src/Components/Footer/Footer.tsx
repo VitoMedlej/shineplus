@@ -55,7 +55,8 @@ const Footer = () => (
             {/* <li><a href="https://www.facebook.com/profile.php?id=100076163602459/" target="_blank" rel="noreferrer" >Facebook</a></li> */}
             
             <li><a href="https://www.facebook.com/shinepluscarspa/" target="_blank" rel="noreferrer" >Facebook </a></li>
-            <li><a href="https://www.instagram.com/shineplus_carspa/" target="_blank" rel="noreferrer" >@Shine Plus Car Spa </a></li>
+            <li><a href="https://www.instagram.com/shineplus_carspa/" target="_blank" rel="noreferrer" >Instagram</a></li>
+            <li><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer" target='_blank' >Whatsapp</a></li>
             <li><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer" target='_blank' >+{process.env.NEXT_PUBLIC_WA}</a></li>
             {/* <li><a href={`http://tiktok.com/@thecraftroomlb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
           </ul>
