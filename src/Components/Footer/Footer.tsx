@@ -45,7 +45,7 @@ const Footer = () => (
             {/* <li><Link href="/rental/collection">All Products</Link></li>  */}
             <li><Link href="/terms-and-conditions">Terms & Conditions</Link></li>
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link href="https://wa.me/+96103545717">Whatsapp Us</Link></li>
+            <li><Link href="/services">Services</Link></li>
           </ul>
      
           <ul  className='ul-white' style={{color:'white'}}>

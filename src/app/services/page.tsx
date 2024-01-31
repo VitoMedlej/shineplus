@@ -4,8 +4,11 @@ import MainCarousel from '../../Components/MainCarousel/MainCarousel'
 import Preloader4 from '../../Components/Preloader4'
 import { Container,Grid, Box, Typography } from '@mui/material'
 import Btn from '@/Components/Btn/Btn'
+import { useRouter } from 'next/navigation'
 
 const Index = () => {
+  const router= useRouter();
+
   return (
     <>
     <Preloader4 res={undefined}/>
@@ -25,7 +28,7 @@ const Index = () => {
   { img: 'https://autodetaillosangeles.com/wp-content/uploads/2021/04/carwash-service-removing-of-dirt-from-mats.jpg', category: 'Full Interior Detailing', description: 'Compact $80, sedan $90, SUV $100' },
   { img: 'https://images-na.ssl-images-amazon.com/images/I/817cjATnhOL._AC_SL1500_.jpg', category: 'Door Edge Guard', description: '$5 per unit' },
   { img: 'https://th.bing.com/th/id/R.9fcb77a26c9f77cda67aae00c7a5fe22?rik=VRR02kVXt2pDtg&pid=ImgRaw&r=0', category: 'AC Bacteria Treatment', description: 'One shot $10\nFoam $15' },
-  { img: 'https://th.bing.com/th/id/R.ec21500c25cfad0f5ae19c65c3c7aa70?rik=YmeRPeXkt5n7eg&pid=ImgRaw&r=0', category: 'Full Treatment Package', description: 'Compact $200, Sedan $225, SUV $250' },
+  // { img: 'https://th.bing.com/th/id/R.ec21500c25cfad0f5ae19c65c3c7aa70?rik=YmeRPeXkt5n7eg&pid=ImgRaw&r=0', category: 'Full Treatment Package', description: 'Compact $200, Sedan $225, SUV $250' },
   { img: 'https://3.bp.blogspot.com/-S_v2FYVwyJM/WXlPjg3xP_I/AAAAAAAAxCY/JmOcrP9VKe03uWi4ueVu1iiqGkre_HvigCK4BGAYYCw/s1600/Paint%2Band%2BBody%2BShop%2BOwings%2BMills%252C%2BMD%2B-%2BMarks%2BBody%2BShop-743215.jpg', category: 'Body Paint Per Panel', description: '$100 per panel' },
   { img: 'https://th.bing.com/th/id/R.a2a3f82aaffad3254d87667622aeb6f4?rik=FrkactpBvwEF4Q&pid=ImgRaw&r=0', category: 'Xpel Tinting Windows Full Car Windows', description: 'Compact $225, sedan $275, SUV $350' },
   { img: 'https://twiistedmedia.com/wp-content/uploads/2021/01/car-wrap-s63-metallic-purple-twiistedmedia5-2048x1365.jpg', category: 'Vinyl Wrap', description: 'Starting price $1,350' },
@@ -63,6 +66,21 @@ const Index = () => {
             </Box>
         </Grid>
         </Grid>})}
+    </Container>
+    <Container sx={{py:4,my:4}} className='bg'>
+
+    <Typography className='clr2' sx={{fontWeight:700,fontSize:'1.15em',fontStyle:'italic',maxWidth:'800px',}}>
+    DRY CLEANING
+      </Typography>
+      <Typography className='white' sx={{pr:{sm:1,md:2},fontWeight:900,fontSize:{xs:'2.5em',sm:'2em',md:'2.5em'},maxWidth:'800px',fontStyle:'italic',textTransform:'uppercase'}}>
+      Book Your Full Treatment Package Today!
+      </Typography>
+      <Btn
+      sx={{mt:1,mb:{xs:4,sm:0}}}
+      onClick={()=>router.push('/services')}
+      >
+        View Services
+      </Btn>
     </Container>
     </>
   )
