@@ -88,10 +88,10 @@ export default function Navbar() {
             <Box className='flex row items-center'>
                 <Box sx={{pr:.1,height:'20px'}}>
 
-            <img src="https://www.svgrepo.com/show/522682/time.svg" alt="" className="img" />
+            <img src="https://www.svgrepo.com/show/520798/instagram.svg" alt="" className="img" />
                 </Box>
             <Typography sx={{color:'black',fontSize:'.70em',textAlign:'end',fontWeight:600}}>
-            Mon - Fri: 9:00 - 12:00 
+            @shineplus_carspa
             </Typography>
             </Box>
             <a className='decor-none' href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`}>
