@@ -88,7 +88,7 @@ Home
 </Typography>
 </Link>
 
-<Link  className='black decor-none ' href={`/#Gallery`}>
+<Link  className='black decor-none ' href={`/gallery`}>
 
         <Typography 
         className=' cursor center white flex gap1 black decor-none '
