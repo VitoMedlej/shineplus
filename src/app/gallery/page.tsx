@@ -7,11 +7,11 @@ const Index = () => {
 
     const fetchDataAndSetImgs = async () => {
         try {
-          const response = await fetch('https://api.jsonbin.io/v3/b/65b919d41f5677401f28610e', {
+          const response = await fetch('https://api.jsonbin.io/v3/b/65bcd509dc746540189f3df5', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
-              'X-Master-Key': '$2a$10$iAUMdzZeDAI2qTW61Uz6UuE/S8Bgs4LfVuZxwByPpocU4CuR7Nzo2'
+              'X-Master-Key': '$2a$10$tKlp8yokSY5sQ58K9UJosuUM4/0k2FCFKG2LqzaNegXtNdlivpIwG'
             }
           });
       
@@ -47,7 +47,7 @@ const Index = () => {
         {
 
 imgs && imgs.map((i:any)=>{
-                return <Box 
+                return <Box key={i?.img} 
                 className='flex auto'
                 sx={{width:{xs:'95%',sm:'48%'},height:{xs:"300px",sm:'400px '}}}>
                             <img src={i?.img} alt="" className="img" />
