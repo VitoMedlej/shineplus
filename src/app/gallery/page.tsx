@@ -48,8 +48,8 @@ const Index = () => {
 
 imgs && imgs.map((i:any)=>{
                 return <Box 
-                className='flex auto'
-                sx={{width:{xs:'95%',sm:'48%'},height:{xs:"300px",sm:'400px '}}}>
+                className='flex '
+                sx={{width:{xs:'95%',sm:'48%'},mx:'auto',my:2,height:{xs:"300px",sm:'400px '}}}>
                             <img src={i?.img} alt="" className="img" />
                 </Box>
             })
