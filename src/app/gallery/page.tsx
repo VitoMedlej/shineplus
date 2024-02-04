@@ -43,14 +43,16 @@ const Index = () => {
       Stories From ShinePlus Car Spa  
       </Typography>
       </Container>
-      <Container className='flex row wrap justify-between '>
+      <Container sx={{py:4}} className='flex row wrap justify-between '>
         {
 
 imgs && imgs.map((i:any)=>{
                 return <Box 
                 className='flex '
-                sx={{width:{xs:'95%',sm:'48%'},mx:'auto',my:2,height:{xs:"300px",sm:'400px '}}}>
-                            <img src={i?.img} alt="" className="img" />
+                sx={{
+                  mt:2,
+                  width:{xs:'95%',sm:'48%'},mx:'auto',my:2,minHeight:{xs:"300px",sm:'400px'}}}>
+                            <img src={i?.img} alt="" className="img contain" />
                 </Box>
             })
         }
