@@ -15,7 +15,7 @@ import useLanguage from '@/Hooks/useLanguage';
 const Preloader4 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState([
-        {img:`https://th.bing.com/th/id/R.c1c0845f0d16c0b2ee4e596901075796?rik=qV1Gz5ziGW0c7Q&pid=ImgRaw&r=0`},
+        {img:`https://www.iowaautospa.com/App_Themes/AutoSpa/images/Main-Auto-Spa.jpg`},
      ])
      const redir = () => {
         router.push('/')
