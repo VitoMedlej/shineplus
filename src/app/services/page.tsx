@@ -15,12 +15,12 @@ let dataArray = [
   { category: 'Car Wash',
   comp : CarWashTable,
   img:`https://bloximages.newyork1.vip.townnews.com/tylerpaper.com/content/tncms/assets/v3/editorial/f/94/f94116ae-48b4-11e8-967f-bbdb9a67b1ea/5ae0c652c4392.image.jpg?resize=1200%2C801`,
-  description: 'Basic car wash for compact $3, sedan $4, SUV $5\nPremium car wash for compact $6, sedan $7, SUV $8\nUltimate car wash for compact $9, sedan $10, SUV $11' },
+  description: 'Premium car wash, 12$ All car types' },
   { img: ' https://th.bing.com/th/id/OIP.qCO9u9p3W-mJdM8-3fj6uAHaE8?w=1615&h=1078&rs=1&pid=ImgDetMain', category: 'Headlights Restoration', description: '$20 for all cars' },
 
   { img: 'https://www.theartofcleanliness.com/wp-content/uploads/ultimate-engine-bay-cleaning-detailing-guide-featured.jpg', category: 'Engine Bay Treatment', description: '$20 for all cars' },
   { img: 'https://th.bing.com/th/id/R.30b930c61903ce960daa6fc67c42c4a0?rik=o52DkTU8QtrSiA&riu=http%3a%2f%2fimages.summitmedia-digital.com%2ftopgear%2fimages%2f2021%2f06%2f04%2fwindshield-water-repellent-guide-1622798797.jpg&ehk=56zjL%2bqzmGf8jQbFuKUIcI5kfAPOGYR9WV40v%2bfazmg%3d&risl=&pid=ImgRaw&r=0', category: 'Rain Repellent Full Windows', description: 'Compact $30, sedan $40, SUV $50' },
-  { img: 'https://th.bing.com/th/id/R.1b326e69c2bec48d47de921cb9979130?rik=3Wv9OpyS1yNQGA&pid=ImgRaw&r=0', category: 'Paint Correction (Polish 2 Step)', description: 'Compact $70, sedan $80, SUV $90' },
+  { img: 'https://eliteautoworksca.com/wp-content/uploads/2023/06/paint-correction.png', category: 'Paint Correction (Polish 2 Step)', description: 'Compact $70, sedan $80, SUV $90' },
   { img: 'https://cimg0.ibsrv.net/cimg/www.mbworld.org/1600x900_85-1/688/display-2--365688.jpg', category: 'Paint Correction with Ceramic Protection (1 Year Warranty)', description: 'Compact $120, sedan $130, SUV $140' },
   { img: 'https://www.familyhandyman.com/wp-content/uploads/2021/06/car-detailing-GettyImages-1214083986.jpg?w=1200', category: 'Interior Detailing', description: 'Compact $70, sedan $80, SUV $90' },
   { img: 'https://autodetaillosangeles.com/wp-content/uploads/2021/04/carwash-service-removing-of-dirt-from-mats.jpg', category: 'Full Interior Detailing', description: 'Compact $80, sedan $90, SUV $100' },
@@ -30,8 +30,8 @@ let dataArray = [
   { img: 'https://3.bp.blogspot.com/-S_v2FYVwyJM/WXlPjg3xP_I/AAAAAAAAxCY/JmOcrP9VKe03uWi4ueVu1iiqGkre_HvigCK4BGAYYCw/s1600/Paint%2Band%2BBody%2BShop%2BOwings%2BMills%252C%2BMD%2B-%2BMarks%2BBody%2BShop-743215.jpg', category: 'Body Paint Per Panel', description: '$100 per panel' },
   { img: 'https://th.bing.com/th/id/R.a2a3f82aaffad3254d87667622aeb6f4?rik=FrkactpBvwEF4Q&pid=ImgRaw&r=0', category: 'Xpel Tinting Windows Full Car Windows', description: 'Compact $225, sedan $275, SUV $350' },
   { img: 'https://twiistedmedia.com/wp-content/uploads/2021/01/car-wrap-s63-metallic-purple-twiistedmedia5-2048x1365.jpg', category: 'Vinyl Wrap', description: 'Starting price $1,350' },
-  { img: 'https://th.bing.com/th/id/R.3ba40c3433be3f9a230304f9e71e16fd?rik=006kh2F5SkA7pg&pid=ImgRaw&r=0', category: 'Upholstery Repair', description: 'Starting price $75' },
-  { img: 'https://www.mandmbodyrepair.co.uk/wp-content/uploads/sites/53/2020/11/M-and-M-Body-Repairs-wheel-repair-1536x1056.jpg', category: 'Rims Repair and Paint (4 Units)', description: '$300' }
+  { img: `https://www.checkatrade.com/blog/wp-content/uploads/2021/05/Reupholster-car-seats-cost-1.jpg`, category: 'Upholstery Repair', description: 'Starting price $75' },
+  { img: 'https://thedingking.com/wp-content/uploads/2023/05/3r8a0210.jpg', category: 'Rims Repair and Paint (4 Units)', description: '$300' }
 ]
 const Index = () => {
   const router= useRouter();
