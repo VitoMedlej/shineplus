@@ -68,7 +68,7 @@ const Footer = () => (
     <div className="site-footer__bottom " style={{color:'white',borderTop:"1px solid #0000001f"}}>
       <div className="container " style={{color:'white'}}>
         <p>Website Developed By{' '}
-          <a style={{ color: 'white' }} href={`${'https://www.onbeirut.com'}`}>OnBeirut Agency </a></p>
+          <a style={{ color: 'white' }} href={`${'https://www.wavescode.com'}`}>wavescode Agency </a></p>
       </div>
     </div>
   </footer>

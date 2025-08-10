@@ -96,7 +96,7 @@ let url = `https://wa.me/${process.env.NEXT_PUBLIC_WA}?text=${encodeURIComponent
   <CiLocationOn/>
         <Typography sx={{my:2,fontSize:{xs:'1.15em'},fontWeight:'500'}}>
                     
-        Beirut / Hadath
+        Lebanon - Dekwaneh
         </Typography>
   </a>
   
