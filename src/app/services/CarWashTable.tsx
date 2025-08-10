@@ -2,9 +2,7 @@ import React from 'react';
 
 const CarWashTable = () => {
   const carWashData = [
-    { type: 'Basic', compact: 3, sedan: 4, suv: 5 },
-    { type: 'Premium', compact: 6, sedan: 7, suv: 8 },
-    { type: 'Ultimate', compact: 9, sedan: 10, suv: 11 },
+    { type: 'Premium', compact: 12, sedan: 15, suv: 18 },
   ];
 
   return (
