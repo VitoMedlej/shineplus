@@ -20,7 +20,7 @@ let dataArray = [
 
   { img: 'https://www.theartofcleanliness.com/wp-content/uploads/ultimate-engine-bay-cleaning-detailing-guide-featured.jpg', category: 'Engine Bay Treatment', description: '$20 for all cars' },
   { img: 'https://th.bing.com/th/id/R.30b930c61903ce960daa6fc67c42c4a0?rik=o52DkTU8QtrSiA&riu=http%3a%2f%2fimages.summitmedia-digital.com%2ftopgear%2fimages%2f2021%2f06%2f04%2fwindshield-water-repellent-guide-1622798797.jpg&ehk=56zjL%2bqzmGf8jQbFuKUIcI5kfAPOGYR9WV40v%2bfazmg%3d&risl=&pid=ImgRaw&r=0', category: 'Rain Repellent Full Windows', description: 'Compact $30, sedan $40, SUV $50' },
-  { img: 'https://th.bing.com/th/id/R.1b326e69c2bec48d47de921cb9979130?rik=3Wv9OpyS1yNQGA&pid=ImgRaw&r=0', category: 'Paint Correction (Polish 2 Step)', description: 'Compact $70, sedan $80, SUV $90' },
+  { img: 'https://adamscoatings.com/wp-content/uploads/2025/02/buffingpaintnearme-1024x768.png.webp', category: 'Paint Correction (Polish 2 Step)', description: 'Compact $70, sedan $80, SUV $90' },
   { img: 'https://cimg0.ibsrv.net/cimg/www.mbworld.org/1600x900_85-1/688/display-2--365688.jpg', category: 'Paint Correction with Ceramic Protection (1 Year Warranty)', description: 'Compact $120, sedan $130, SUV $140' },
   { img: 'https://www.familyhandyman.com/wp-content/uploads/2021/06/car-detailing-GettyImages-1214083986.jpg?w=1200', category: 'Interior Detailing', description: 'Compact $70, sedan $80, SUV $90' },
   { img: 'https://autodetaillosangeles.com/wp-content/uploads/2021/04/carwash-service-removing-of-dirt-from-mats.jpg', category: 'Full Interior Detailing', description: 'Compact $80, sedan $90, SUV $100' },
@@ -31,7 +31,7 @@ let dataArray = [
   { img: 'https://th.bing.com/th/id/R.a2a3f82aaffad3254d87667622aeb6f4?rik=FrkactpBvwEF4Q&pid=ImgRaw&r=0', category: 'Xpel Tinting Windows Full Car Windows', description: 'Compact $225, sedan $275, SUV $350' },
   { img: 'https://twiistedmedia.com/wp-content/uploads/2021/01/car-wrap-s63-metallic-purple-twiistedmedia5-2048x1365.jpg', category: 'Vinyl Wrap', description: 'Starting price $1,350' },
   { img: 'https://wecanfixthat.com/wp-content/uploads/2021/09/Auto-9.jpg', category: 'Upholstery Repair', description: 'Starting price $75' },
-  { img: 'https://www.mandmbodyrepair.co.uk/wp-content/uploads/sites/53/2020/11/M-and-M-Body-Repairs-wheel-repair-1536x1056.jpg', category: 'Rims Repair and Paint (4 Units)', description: '$300' }
+  { img: 'https://cdn.prod.website-files.com/64ef535b2db7729570727e2b/6511aa08a7f0ade6f2279bfd_Shutterstock_1434838715(1).webp', category: 'Rims Repair and Paint (4 Units)', description: '$300' }
 ]
 const Index = () => {
   const router= useRouter();
