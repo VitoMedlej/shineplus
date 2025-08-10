@@ -60,7 +60,7 @@ PreLoader = ({data,resImages}:any) => {
                 title:`Car Wash`
               },
               {
-                img: `https://th.bing.com/th/id/OIP.H8AKbby4ceYx6Kc4eZAWRgHaE8?rs=1&pid=ImgDetMain`,
+                img: `https://justthedetailssycamore.com/wp-content/uploads/2024/11/3C3A5272-e1642458142950-1.jpg`,
                 title:`Exterior Treatments`
               },
               {
