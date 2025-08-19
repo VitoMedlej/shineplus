@@ -18,7 +18,7 @@ let dataArray = [
   description: 'Premium car wash for compact $12, sedan $15, SUV $18' },
   { img: 'https://i0.wp.com/dirtydetailsbp.com/wp-content/uploads/2022/02/DD-Headlight-2-e1647117588510.jpg?fit=1016%2C1024&ssl=1', category: 'Headlights Restoration', description: '$20 for all cars' },
 
-  { img: 'https://www.theartofcleanliness.com/wp-content/uploads/ultimate-engine-bay-cleaning-detailing-guide-featured.jpg', category: 'Engine Bay Treatment', description: '$20 for all cars' },
+  { img: 'https://www.theartofcleanliness.com/wp-content/uploads/ultimate-engine-bay-cleaning-detailing-guide-featured.jpg', category: 'Engine Bay Treatment', description: '$25 for all cars' },
   { img: 'https://th.bing.com/th/id/R.30b930c61903ce960daa6fc67c42c4a0?rik=o52DkTU8QtrSiA&riu=http%3a%2f%2fimages.summitmedia-digital.com%2ftopgear%2fimages%2f2021%2f06%2f04%2fwindshield-water-repellent-guide-1622798797.jpg&ehk=56zjL%2bqzmGf8jQbFuKUIcI5kfAPOGYR9WV40v%2bfazmg%3d&risl=&pid=ImgRaw&r=0', category: 'Rain Repellent Full Windows', description: 'Compact $30, sedan $40, SUV $50' },
   { img: 'https://adamscoatings.com/wp-content/uploads/2025/02/buffingpaintnearme-1024x768.png.webp', category: 'Paint Correction (Polish 2 Step)', description: 'Compact $70, sedan $80, SUV $90' },
   { img: 'https://cimg0.ibsrv.net/cimg/www.mbworld.org/1600x900_85-1/688/display-2--365688.jpg', category: 'Paint Correction with Ceramic Protection (1 Year Warranty)', description: 'Compact $120, sedan $140, SUV $160' },
